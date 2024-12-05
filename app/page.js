@@ -1,11 +1,11 @@
 import "./globals.css";
-import HeroGoEdu from "@/components/HeroGoEdu";
 import FormGoEdu from "@/components/FormGoEdu";
 import WhyChooseUsGoEdu from "@/components/WhyChooseUsGoEdu";
 import AboutGoEdu from "@/components/AboutGoEdu";
 import TestimonailGoEdu from "@/components/TestimonailGoEdu";
 import MapGoEdu from "@/components/MapGoEdu";
 import MobileAnimation from "@/components/MobileAnimation";
+import HeroEduChacha from "@/components/HeroEduChacha";
 
 export async function generateMetadata() {
   return {
@@ -95,7 +95,7 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <div>
-      <HeroGoEdu />
+      <HeroEduChacha />
       <FormGoEdu />
       <MapGoEdu />
       <WhyChooseUsGoEdu />

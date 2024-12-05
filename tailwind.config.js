@@ -18,6 +18,7 @@ module.exports = {
         custom: '0px 10px 30px 0px #D9D9D9',
         counsel: '0px 5px 12px 0px #7A7A7A3B',
         bocs: '0px 4.94px 4.94px 0px #7A7A7A80',
+        intense: '37.27px 31.53px 15.29px -3.82px #00000040',
       },
     },
   },
