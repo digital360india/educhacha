@@ -146,7 +146,10 @@ export default function Hero({ image, height, need }) {
                   </div>
                 </div>
               )}
+    
 
+
+    
               {isOpenLocation && (
                 <div className="absolute top-[16%] lg:top-[20%] left-[2%] md:left-[10%] lg:left-[40%] bg-white shadow-md w-[400px] h-[550px] overflow-y-scroll rounded-md z-10 scroll-hidden ">
                   <div className="bg-[#02618f70] rounded-md py-4 px-2">
