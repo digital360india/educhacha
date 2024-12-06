@@ -4,7 +4,6 @@ import WhyChooseUsEduChacha from "@/components/WhyChooseUsEduChacha";
 import AboutEduChacha from "@/components/AboutEduChacha";
 import Testimonials from "@/components/Testimonials";
 import MapEduChacha from "@/components/MapEduChacha";
-import MobileAnimation from "@/components/MobileAnimation";
 import HeroEduChacha from "@/components/HeroEduChacha";
 
 export async function generateMetadata() {
@@ -99,9 +98,7 @@ export default function Home() {
       <FormEduChacha />
       <MapEduChacha />
       <WhyChooseUsEduChacha />
-      <div className="md:hidden">
-        <MobileAnimation />
-      </div>
+    
       <AboutEduChacha />
       <Testimonials />
     </div>

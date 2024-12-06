@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 const WhyChooseUsEduChacha = () => {
-  // Array containing content for the "Why Choose Us" section
   const contentArray = [
     {
       title: "Lorem Ipsum",
@@ -60,7 +59,7 @@ const WhyChooseUsEduChacha = () => {
 
         <div>
           {contentArray.map((item, index) => (
-            <div key={index} className="flex gap-4 mb-6">
+            <div key={index} className="flex gap-4 mb-6 px-8 md:px-0">
               <Image
                 src={item.icon}
                 alt={item.title}
