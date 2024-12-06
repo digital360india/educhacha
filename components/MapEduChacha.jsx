@@ -4,7 +4,7 @@ import Image from "next/image";
 import Mapbanner from "@/public/Mapbanner.svg";
 import Link from "next/link";
 
-const MapGoEdu = () => {
+const MapEduChacha = () => {
   const [showContent, setShowContent] = useState(false);
 
   const cities = [
@@ -142,4 +142,4 @@ const MapGoEdu = () => {
   );
 };
 
-export default MapGoEdu;
+export default MapEduChacha;

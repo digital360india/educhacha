@@ -84,7 +84,7 @@ const CustomRightArrow = ({ onClick }) => {
   );
 };
 
-const TestimonialGoEdu = () => {
+const Testimonials = () => {
   return (
     <div className="bg-background-color p-1 ">
       <div className="px-8 pt-8  md:px-14 md:pt-14">
@@ -147,4 +147,4 @@ const TestimonialGoEdu = () => {
   );
 };
 
-export default TestimonialGoEdu;
+export default Testimonials;

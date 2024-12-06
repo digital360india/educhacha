@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const WhyChooseUsGoEdu = () => {
+const WhyChooseUsEduChacha = () => {
   // Array containing content for the "Why Choose Us" section
   const contentArray = [
     {
@@ -82,4 +82,4 @@ const WhyChooseUsGoEdu = () => {
   );
 };
 
-export default WhyChooseUsGoEdu;
+export default WhyChooseUsEduChacha;

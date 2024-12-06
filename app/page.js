@@ -1,9 +1,9 @@
 import "./globals.css";
-import FormGoEdu from "@/components/FormGoEdu";
-import WhyChooseUsGoEdu from "@/components/WhyChooseUsGoEdu";
-import AboutGoEdu from "@/components/AboutGoEdu";
-import TestimonailGoEdu from "@/components/TestimonailGoEdu";
-import MapGoEdu from "@/components/MapGoEdu";
+import FormEduChacha from "@/components/FormEduChacha";
+import WhyChooseUsEduChacha from "@/components/WhyChooseUsEduChacha";
+import AboutEduChacha from "@/components/AboutEduChacha";
+import Testimonials from "@/components/Testimonials";
+import MapEduChacha from "@/components/MapEduChacha";
 import MobileAnimation from "@/components/MobileAnimation";
 import HeroEduChacha from "@/components/HeroEduChacha";
 
@@ -96,14 +96,14 @@ export default function Home() {
   return (
     <div>
       <HeroEduChacha />
-      <FormGoEdu />
-      <MapGoEdu />
-      <WhyChooseUsGoEdu />
+      <FormEduChacha />
+      <MapEduChacha />
+      <WhyChooseUsEduChacha />
       <div className="md:hidden">
         <MobileAnimation />
       </div>
-      <AboutGoEdu />
-      <TestimonailGoEdu />
+      <AboutEduChacha />
+      <Testimonials />
     </div>
   );
 }

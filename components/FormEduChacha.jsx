@@ -3,7 +3,7 @@ import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
 
-const FormGoEdu = () => {
+const FormEduChacha = () => {
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -197,4 +197,4 @@ const FormGoEdu = () => {
     </>
   );
 };
-export default FormGoEdu;
+export default FormEduChacha;

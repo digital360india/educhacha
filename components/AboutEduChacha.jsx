@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Aboutuseduchacha from "@/public/Aboutuseduchacha.svg";
 import SchoolByCitiesGoedu from "./SchoolByCitiesGoedu";
 
-const AboutGoEdu = () => {
+const AboutEduChacha = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
@@ -309,4 +309,4 @@ const AboutGoEdu = () => {
   );
 };
 
-export default AboutGoEdu;
+export default AboutEduChacha;
