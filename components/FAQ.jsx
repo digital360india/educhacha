@@ -55,11 +55,13 @@ function FAQ({ categoryData }) {
           <p>
             {isExpanded ? (
               <div
+              style={{color:"white" }}
                 className="article-container"
                 dangerouslySetInnerHTML={text}
               />
             ) : (
               <div
+              style={{color:"white"}}
                 className="article-container "
                 dangerouslySetInnerHTML={initialText}
               />
