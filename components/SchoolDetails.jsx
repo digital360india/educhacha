@@ -58,7 +58,7 @@ const CircularProgressWithIcon = ({ value, svgSrc, svgAlt }) => {
 
 const facility = [
   {
-    imageSrc: "/Swimming.svg",
+    imageSrc: "/swimming.svg",
     facility: "Swimming Pool",
     check: "Swimming_Pool",
   },
@@ -98,13 +98,13 @@ const facility = [
     check: "Tennis_Court",
   },
   {
-    imageSrc: "/Playground.svg",
+    imageSrc: "/playground.svg",
     facility: "Playground",
     check: "Play_Ground",
   },
 
   {
-    imageSrc: "/Badminton.svg",
+    imageSrc: "/badminton.svg",
     facility: "Badminton Court",
     check: "Badminton_Court",
   },
