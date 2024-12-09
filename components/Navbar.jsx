@@ -100,7 +100,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <img
                 className="w-14 lg:w-[80px]"
-                src="/goEdulogo.svg"
+                src="/educhachalogo.png"
                 alt="Logo"
                 width={88}
                 height={56}
@@ -151,7 +151,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <img
                 className="w-14 h-14 lg:w-22"
-                src="/footerlogo.svg"
+                src="/educhachalogo.png"
                 alt="Logo"
                 width={1000}
                 height={1000}
@@ -222,7 +222,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <img
                 className="w-[70px] h-[60px]"
-                src="/footerlogo.svg"
+                src="/educhachalogo.png"
                 alt="Logo"
               />
             </Link>
