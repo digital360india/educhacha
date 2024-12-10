@@ -10,6 +10,8 @@ const FormEduChacha = () => {
     name: "",
 
     phone: "",
+    source: "EduChacha - https://educhacha.vercel.app/",
+
   });
 
   const handleChange = (e) => {
@@ -34,6 +36,8 @@ const FormEduChacha = () => {
         setFormData({
           name: "",
           phone: "",
+          source: "EduChacha - https://educhacha.vercel.app/",
+
         });
       } else {
         alert("Try again");

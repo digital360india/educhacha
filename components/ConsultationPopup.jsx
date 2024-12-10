@@ -11,6 +11,8 @@ export default function ConsultationPopup({ setClose }) {
     email: "",
     phone: "",
     classes: "",
+    source: "EduChacha - https://educhacha.vercel.app/",
+
   });
 
   const handleChange = (e) => {
@@ -37,6 +39,7 @@ export default function ConsultationPopup({ setClose }) {
           email: "",
           phone: "",
           classes: "",
+          source: "EduChacha - https://educhacha.vercel.app/",
         });
       } else {
         alert("Try again");
