@@ -92,7 +92,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className="hidden md:block w-full absolute top-0 bg-[#0C263F] z-40"
+        className="hidden md:block w-full absolute top-0 bg-[#09395370] backdrop-blur z-40"
        
       >
         <div className="justify-between  items-center h-[80px] flex px-10">

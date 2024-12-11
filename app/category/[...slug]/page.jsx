@@ -1,8 +1,7 @@
 import { base } from "@/app/api/airtable.jsx";
-import Hero from "@/components/Hero";
 import FAQ from "@/components/FAQ";
 import CategoryPage from "@/components/CategoryPage";
-import CategoryHeroGoEdu from "@/components/CategoryHeroGoEdu";
+import CategoryHeroEduchacha from "@/components/CategoryHeroEduchacha";
 import Head from "next/head";
 
 async function getCategoryData(slug) {
@@ -33,8 +32,8 @@ export async function generateMetadata({ params }) {
       locale: "en_US",
       type: "website",
       images: [{ url: categoryData?.featuredImg }],
-      siteName: "Edu123",
-      siteName: "Edu123 School Search Portal",
+      siteName: "EduChacha",
+      siteName: "EduChacha School Search Portal",
     },
     robots: {
       googleBot: {
@@ -100,7 +99,7 @@ export default async function ListingPage({ params }) {
 
 
       <div className="overflow-hidden md:overflow-visible">
-        <CategoryHeroGoEdu />
+        <CategoryHeroEduchacha />
         <CategoryPage categoryData={categoryData} />
         <FAQ categoryData={categoryData} />
       </div>

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Aboutuseduchacha from "@/public/Aboutuseduchacha.svg";
-import SchoolByCitiesGoedu from "./SchoolByCitiesGoedu";
+import SchoolByCitieseduchacha from "./SchoolByCitieseduchacha";
 
 const AboutEduChacha = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -110,7 +110,7 @@ const AboutEduChacha = () => {
       </div>
 
       <div className="md:hidden">
-        <SchoolByCitiesGoedu />
+        <SchoolByCitieseduchacha />
       </div>
 
       <div className="hidden md:block">

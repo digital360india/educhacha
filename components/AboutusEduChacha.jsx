@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import MascotAnimation from "./MascotAnimation";
+// import MascotAnimation from "./MascotAnimation";
 import Image from "next/image";
 
 const AboutusEduChacha = () => {
   return (
     <>
-      <div className="absolute">
+      {/* <div className="absolute">
         <MascotAnimation />
-      </div>
+      </div> */}
 
       <div className="bg-background-button">
         <h1
@@ -20,13 +20,16 @@ const AboutusEduChacha = () => {
 
         
         <div className="flex justify-center items-center mb-20">
+          <div className="bg-white rounded-full p-10">
+
           <Image
-            src="/aboutbg.svg"
+            src="/educhachalogo.png"
             alt="about"
             width={1000}
             height={1000}
-            className="w-[120px] h-[120px] md:w-[200px] md:h-[200px] "
-          />
+            className="w-[120px] h-[120px] md:w-[200px] md:h-[200px]  "
+            />
+            </div>
         </div>
 
         <h2 className="text-center text-white text-[30px] mb-5">
@@ -72,7 +75,7 @@ const AboutusEduChacha = () => {
                 About Us
               </p>
               <img
-                src="/footerlogo.svg"
+                src="/educhachalogo.png"
                 className="w-[100px] h-[130px] md:h-[160px] md:w-[150px]"
                 alt="Mission logo"
               />
@@ -82,7 +85,7 @@ const AboutusEduChacha = () => {
           <div className="flex flex-col md:flex-row justify-between items-center  md:space-x-10">
             <div className="flex items-center justify-center order-1 md:order-none gap-5 md:gap-0">
               <img
-                src="./ourpassion.svg"
+                src="./edu chacha_stick 1 (1).svg"
                 className="w-[100px] h-[110px] md:h-[160px] md:w-[150px]"
                 alt="Passion logo"
               />
@@ -170,7 +173,7 @@ const AboutusEduChacha = () => {
                 Your Path to Informed Choices
               </p>
               <img
-                src="/joinus.svg"
+                src="/passion.png"
                 className="w-[100px] h-[130px] md:h-[160px] md:w-[150px]"
                 alt="Join us logo"
               />

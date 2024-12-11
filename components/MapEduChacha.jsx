@@ -44,7 +44,7 @@ const MapEduChacha = () => {
       >
         <div className="">
           <Image
-            src="/indiamap.png"
+            src="/educhachamap.svg"
             alt="map"
             width={1000}
             height={1000}

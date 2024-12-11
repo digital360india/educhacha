@@ -11,7 +11,7 @@ export async function generateMetadata() {
   return {
     title: "Contact Us",
     description:
-      "Welcome to GoEdu - The ultimate guide to the best schools in the United Arab Emirates! ",
+      "Welcome to EduChacha - The ultimate guide to the best schools in the United Arab Emirates! ",
   };
 }
 

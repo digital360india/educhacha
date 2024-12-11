@@ -9,28 +9,28 @@ import HeroEduChacha from "@/components/HeroEduChacha";
 export async function generateMetadata() {
   return {
     title: "Find the Best Boarding Schools in Seconds | educhacha",
-    description: "Find your dream boarding school in seconds with GoEdu. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
+    description: "Find your dream boarding school in seconds with Educhacha. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
     keywords: "School Admissions, School consultancy, School consultancy, Online School Listings, Admissions Guidance, Boarding School Listings, Trusted School Consultancy, School Admission Information, Finding the Right Boarding School",
     viewport: "width=device-width, initial-scale=1, shrink-to-fit=no",
     twitter: {
       card: "summary",
-      site: "@GoEduIndia",
-      title: "Find the Best Boarding Schools in Seconds | GoEdu",
-      description: "Find your dream boarding school in seconds with GoEdu. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
+      site: "@EduchachaIndia",
+      title: "Find the Best Boarding Schools in Seconds | Educhacha",
+      description: "Find your dream boarding school in seconds with Educhacha. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
       image: "https://res.cloudinary.com/infoGoEdu/image/upload/v1703243169/GoEdu/GoEduHomeD.png",
       url: "https://x.com/GoEduindia",
     },
     openGraph: {
       locale: "en_US",
       type: "website",
-      title: "Find the Best Boarding Schools in Seconds | GoEdu",
-      description: "Find your dream boarding school in seconds with GoEdu. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
+      title: "Find the Best Boarding Schools in Seconds | Educhacha",
+      description: "Find your dream boarding school in seconds with Educhacha. Unlock a world of educational possibilities. Your path to the perfect education begins here.",
       url: "https://www.GoEdu.in/",
-      siteName: "GoEdu",
+      siteName: "Educhacha",
       images: [
         {
           url: "https://res.cloudinary.com/infoGoEdu/image/upload/v1703243169/GoEdu/GoEduHomeD.png",
-          alt: "GoEdu Home",
+          alt: "Educhacha Home",
         },
       ],
     },
@@ -47,8 +47,8 @@ export async function generateMetadata() {
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "GoEdu",
-        alternateName: "GoEdu",
+        name: "Educhacha",
+        alternateName: "Educhacha",
         url: "https://www.GoEdu.in/",
         logo: "https://res.cloudinary.com/infoGoEdu/image/upload/v1703311458/GoEdu/logo1.png",
         contactPoint: {
@@ -68,7 +68,7 @@ export async function generateMetadata() {
       {
         "@context": "https://schema.org",
         "@type": "ContactPoint",
-        alternateName: "GoEdu",
+        alternateName: "Educhacha",
         areaServed: "India",
         availableLanguage: "English",
         email: "info@GoEdu.in",

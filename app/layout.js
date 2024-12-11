@@ -26,7 +26,7 @@ export async function generateMetadata() {
       },
       {
         name: "application-name",
-        content: "GoEdu",
+        content: "Educhacha",
       },
       {
         name: "description",
@@ -38,7 +38,7 @@ export async function generateMetadata() {
       },
       {
         name: "keywords",
-        content: "education, GoEdu, online learning",
+        content: "education, Educhacha, online learning",
       },
     ],
     customMeta: (
