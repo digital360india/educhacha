@@ -15,6 +15,7 @@ import Image from "next/image";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import ConsultationPopup from "./ConsultationPopup";
+import herobanner from "@/public/herobanner.svg";
 
 const getProgressBarColor = (value) => {
   if (value < 25) {
@@ -42,7 +43,6 @@ const CircularProgressWithIcon = ({ value, svgSrc, svgAlt }) => {
         })}
       />
 
-     
       <div className="absolute inset-0 flex justify-center items-center">
         <Image
           src={svgSrc}
@@ -278,7 +278,7 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
   }, [lastScrollY]);
   return (
     <>
-      <section className="hidden md:block">
+      {/* <section className="hidden md:block">
         <div
           className="relative     grid place-content-center bg-no-repeat h-[60vh] mt-10"
           style={{
@@ -319,7 +319,65 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
+      <div
+        className="relative w-full h-[100vh] md:h-[105vh] bg-cover bg-center pt-8  md:block hidden"
+        style={{ backgroundImage: `url(${herobanner.src})` }}
+      >
+        <div className="md:grid md:grid-cols-2 items-center h-full px-8 md:px-16">
+          <div className=" flex justify-center">
+            <div className="absolute bottom-12 border-[8px] md:border-[16px] border-[#093655] rotate-3 shadow-intense">
+              <Image
+                src="/bannereduchacha.gif"
+                width={400}
+                height={460}
+                alt="chacha"
+                className="w-[200px] h-[280px] lg:w-[400px] lg:h-[460px]"
+              />
+            </div>
+
+            <div className="absolute -bottom-0 md:-bottom-4 left-12 md:left-32">
+              <Image
+                src="/books.svg"
+                width={183}
+                height={219}
+                alt="books"
+                className="w-[120px] h-[150px] md:w-[183px] md:h-[219px]"
+              />
+            </div>
+          </div>
+
+          <div className="md:flex md:flex-col md:justify-center md:items-end md:text-right mt-[60%] sm:mt-[0%] space-y-4">
+            <h2 className="text-[#023250] text-[24px] md:text-[40px] Merriweather">
+              {school?.name}
+            </h2>
+            <div className="text-left flex justify-center ">
+              <button
+                className="w-[180px]  shadow-md h-[40px] bg-[#02618f] text-white rounded-lg"
+                // onClick={openPopup}
+                onClick={toggleBookingPopup}
+              >
+                Enquire Now
+              </button>
+              <Enquire
+                isOpen={isPopupOpen}
+                onClose={closePopup}
+                school={school?.name}
+              />
+            </div>
+            <StarRating
+              rating={Math.ceil(school?.rating)}
+              need="yes"
+              review={school?.numOfReviews}
+              className=""
+            />
+          </div>
+        </div>
+        {isOpenpopup && (
+          <ConsultationPopup setClose={toggleBookingClosePopup} />
+        )}
+      </div>
+
       <section className="block md:hidden">
         <div
           className="relative  grid place-content-center bg-no-repeat h-[65vh] mt-10"
@@ -361,6 +419,7 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
           </div>
         </div>
       </section>
+
       <section className=" sm:hidden    gap-8 overflow-scroll md:overflow-hidden mt-10 px-5">
         <Swiper
           slidesPerView={1}
@@ -411,9 +470,10 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
               </p>
               <hr className="w-auto md:w-[550px] h-0.5 bg-black" />
 
-              <div dangerouslySetInnerHTML={{__html:school?.Long_Description}} className="article-container text-[16px] h-[323px] md:w-[570px] text-[#898989] text-justify p-2 overflow-y-scroll">
-                
-              </div>
+              <div
+                dangerouslySetInnerHTML={{ __html: school?.Long_Description }}
+                className="article-container text-[16px] h-[323px] md:w-[570px] text-[#898989] text-justify p-2 overflow-y-scroll"
+              ></div>
 
               <section className="space-y-2    md:space-y-5">
                 <div>
@@ -533,7 +593,6 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
                 <div className="md:flex text-center md:w-1/2 sm:w-auto md:items-center ">
                   <div className="space-y-2 flex flex-col items-center ">
                     <div className="flex md:items-center md:justify-center relative px-2 md:px-0  md:p-6 md:pb-4 lg:p-0 w-full">
-                      
                       <div>
                         <CircularProgressWithIcon
                           value={school?.Infrastructure || 0}
@@ -554,7 +613,6 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
                             `${Math.round(school.Infrastructure)}%`}
                         </p>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
@@ -840,8 +898,6 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
             </Swiper>
           </section>
         </div>
-
-        
       </div>
     </>
   );
