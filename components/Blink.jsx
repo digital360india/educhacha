@@ -73,7 +73,7 @@ export default function Blink() {
         <div className="absolute top-[132px] right-2 md:top-28 md:right-40 z-20">
           <div
             ref={circleRef}
-            className="w-[100px] h-[100px] rounded-full bg-gradient-to-r from-background-color to-background-button"
+            className="w-[100px] h-[100px] rounded-full bg-white"
           ></div>
           <div
             ref={maskRef}

@@ -224,6 +224,31 @@ export default function Filter({ filterdata, setfilterdata }) {
             return item;
           }
         }
+        if (filterdata?.type.includes("girls_schools")) {
+          if (item?.fields?.girls_schools) {
+            return item;
+          }
+        }
+        if (filterdata?.type.includes("boys_schools")) {
+          if (item?.fields?.boys_schools) {
+            return item;
+          }
+        }
+        if (filterdata?.type.includes("coed_schools")) {
+          if (item?.fields?.coed_schools) {
+            return item;
+          }
+        }
+        if (filterdata?.type.includes("icse_isc_schools")) {
+          if (item?.fields?.icse_isc_schools) {
+            return item;
+          }
+        }
+        if (filterdata?.type.includes("cbse_schools")) {
+          if (item?.fields?.cbse_schools) {
+            return item;
+          }
+        }
       });
     } else {
       var filter4 = filter3;
@@ -567,35 +592,7 @@ export default function Filter({ filterdata, setfilterdata }) {
           <div className="space-y-3">
             <p className="text-[14px] font-semibold">Type</p>
             <div className="flex flex-wrap gap-x-3 gap-y-5 text-[12px]">
-              <div className="flex justify-between min-w-[140px] pr-3">
-                <p>Boarding</p>
-                <button
-                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
-                  onClick={() => handleType("full_boarding_schools")}
-                >
-                  {filterdata.type.includes("full_boarding_schools") ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill="none"
-                        stroke="#02618f"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
-                        d="m2.75 8.75l3.5 3.5l7-7.5"
-                      />
-                    </svg>
-                  ) : (
-                    ""
-                  )}
-                </button>
-              </div>
-
-              <div className="flex justify-between pl-1 min-w-[140px] pr-2">
+            <div className="flex justify-between pl-1 min-w-[140px] ">
                 <p>Day Boarding</p>
                 <button
                   className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
@@ -622,13 +619,148 @@ export default function Filter({ filterdata, setfilterdata }) {
                   )}
                 </button>
               </div>
-              <div className="flex justify-between  min-w-[140px] pr-3">
+              <div className="flex justify-between  min-w-[140px] ">
                 <p>Day School</p>
                 <button
                   className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
                   onClick={() => handleType("day_schools")}
                 >
                   {filterdata.type.includes("day_schools") ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#02618f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m2.75 8.75l3.5 3.5l7-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </div>
+              <div className="flex justify-between min-w-[140px]  ">
+                <p>Boys Boarding</p>
+                <button
+                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
+                  onClick={() => handleType("boys_schools")}
+                >
+                  {filterdata.type.includes("boys_schools") ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#02618f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m2.75 8.75l3.5 3.5l7-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </div>
+              <div className="flex justify-between min-w-[140px] ">
+                <p>Girls Boarding</p>
+                <button
+                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
+                  onClick={() => handleType("girls_schools")}
+                >
+                  {filterdata.type.includes("girls_schools") ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#02618f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m2.75 8.75l3.5 3.5l7-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </div>
+              <div className="flex justify-between  min-w-[140px] ">
+                <p>Coed Boarding</p>
+                <button
+                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
+                  onClick={() => handleType("coed_schools")}
+                >
+                  {filterdata.type.includes("coed_schools") ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#02618f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m2.75 8.75l3.5 3.5l7-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </div>
+              <div className="flex justify-between  min-w-[140px] ">
+                <p>ICSE Boarding</p>
+                <button
+                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
+                  onClick={() => handleType("icse_isc_schools")}
+                >
+                  {filterdata.type.includes("icse_isc_schools") ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#02618f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m2.75 8.75l3.5 3.5l7-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </div>
+              <div className="flex justify-between  min-w-[140px] ">
+                <p>CBSE Boarding</p>
+                <button
+                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
+                  onClick={() => handleType("cbse_schools")}
+                >
+                  {filterdata.type.includes("cbse_schools") ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
