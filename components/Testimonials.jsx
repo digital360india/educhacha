@@ -17,7 +17,7 @@ const testimonials = [
     image:
       "https://res.cloudinary.com/eduminatti-com/image/upload/v1725877951/Edu123/Eduimages/WhatsApp_Image_2024-09-09_at_4.01.42_PM.jpg",
     description:
-      "As a parent, choosing the right boarding school for my child felt overwhelming. Edu Chacha's user-friendly platform and transparent details helped us narrow down our choices effortlessly. The consultation support was incredibly reassuring, and we couldn't be happier with our final decision!",
+      "As a parent, choosing the right boarding school for my child felt overwhelming. Edu Chacha's user-friendly platform and transparent details helped us narrow down our choices effortlessly. The consultation support was incredibly reassuring, happier with our final decision!",
   },
   {
     name: "Priya Danu",
@@ -109,7 +109,7 @@ const Testimonials = () => {
               className="h-[400px] md:h-[440px] flex justify-center items-center"
             >
               <div
-                className="bg-white w-[370px] h-[300px] md:h-[360px] mx-6 p-8 md:mx-14 rounded-lg relative "
+                className="bg-white w-[370px] h-[300px] md:h-[380px] mx-6 p-8 md:mx-14 rounded-lg relative "
                 style={{
                   boxShadow: "0px 2px 10px 0px #00000040",
                 }}
