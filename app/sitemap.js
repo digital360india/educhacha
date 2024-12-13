@@ -11,7 +11,7 @@ async function fetchAllRecords(tableName) {
 }
 
 export default async function sitemap() {
-  const hostname = "edu123.in";
+  const hostname = "educhacha.com";
 
   const categoryData = await fetchAllRecords("category 2");
   const categoryLinks = categoryData.map((sing) => {
@@ -23,33 +23,33 @@ export default async function sitemap() {
   });
 
   const staticLinks = [
-    { url: "https://edu123.in", lastModified: "2023-12-21T11:58:24.000Z" },
+    { url: "https://educhacha.com", lastModified: "2023-12-21T11:58:24.000Z" },
     {
-      url: "https://edu123.in/about",
+      url: "https://educhacha.com/about",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
     {
-      url: "https://edu123.in/compare-schools",
+      url: "https://educhacha.com/compare-schools",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
     {
-      url: "https://edu123.in/privacy-policy",
+      url: "https://educhacha.com/privacy-policy",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
     {
-      url: "https://edu123.in/contact",
+      url: "https://educhacha.com/contact",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
     {
-      url: "https://edu123.in/terms-and-condition",
+      url: "https://educhacha.com/terms-and-condition",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
     {
-      url: "https://edu123.in/author",
+      url: "https://educhacha.com/author",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
     {
-      url: "https://edu123.in/school/sitemap.xml",
+      url: "https://educhacha.com/school/sitemap.xml",
       lastModified: "2023-12-21T11:58:24.000Z",
     },
   ];

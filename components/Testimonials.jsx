@@ -10,28 +10,28 @@ const testimonials = [
     image:
       "https://res.cloudinary.com/eduminatti-com/image/upload/v1725877951/Edu123/Eduimages/WhatsApp_Image_2024-09-09_at_3.53.37_PM.jpg",
     description:
-      "Choosing the right school felt overwhelming until we found Go Edu. Their personalized approach and genuine recommendations put our minds at ease. We felt truly supported every step of the way.",
+      "Edu Chacha made my boarding school search so easy! The platform had all the information I needed, and the detailed listings helped me find a school that perfectly matched my interests and goals. I am so excited about my new journey, and I owe it all to Edu Chacha!",
   },
   {
     name: "Priyangini",
     image:
       "https://res.cloudinary.com/eduminatti-com/image/upload/v1725877951/Edu123/Eduimages/WhatsApp_Image_2024-09-09_at_4.01.42_PM.jpg",
     description:
-      "I'm so grateful for Go Edus counseling team! They understood our needs and guided us through everything, from mock tests to final recommendations. Thanks to them, we found the perfect school match.",
+      "As a parent, choosing the right boarding school for my child felt overwhelming. Edu Chacha's user-friendly platform and transparent details helped us narrow down our choices effortlessly. The consultation support was incredibly reassuring, and we couldn't be happier with our final decision!",
   },
   {
     name: "Priya Danu",
     image:
       "https://res.cloudinary.com/eduminatti-com/image/upload/v1725877951/Edu123/Eduimages/WhatsApp_Image_2024-09-09_at_3.59.49_PM.jpg",
     description:
-      "We were so confused before coming across Go Edu. Their clear, honest advice helped us understand our options and make the best decision with confidence. I couldn't have asked for a better experience!",
+      "Thanks to Edu Chacha, I found a boarding school with amazing extracurricular activities and great academics. The platform is super easy to use, and it gave me all the info I needed to feel confident about my choice. I'm so happy with my school now!",
   },
   {
     name: "Shivam Panwar",
     image:
       "https://res.cloudinary.com/eduminatti-com/image/upload/v1725877951/Edu123/Eduimages/WhatsApp_Image_2024-09-09_at_3.54.31_PM.jpg",
     description:
-      "From assessments to admission support, Go Edu made the entire process so easy. Their attention to detail and commitment to authenticity gave us complete confidence in our school choice. Highly recommend!",
+      "Edu Chacha is a lifesaver for busy parents! The platform's comprehensive resources and unbiased insights made the process of selecting a boarding school stress-free. We’re thrilled with the school we found for our child, and Edu Chacha played a big role in making it happen.",
   },
 ];
 

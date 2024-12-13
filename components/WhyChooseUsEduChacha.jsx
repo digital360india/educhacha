@@ -4,62 +4,62 @@ import React from "react";
 const WhyChooseUsEduChacha = () => {
   const contentArray = [
     {
-      title: "Lorem Ipsum",
+      title: "Tailored Guidance You Can Trust",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Felis nec mi dignissim pharetra placerat faucibus cursus.",
+"At Edu Chacha, we focus on your child's unique needs, not school preferences. Our unbiased recommendations are designed to match the best educational environment for your child, ensuring a thoughtful and genuine selection process.",
       icon: "/check.svg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Personalized Expert Support",
       description:
-        "Erat est massa ultricies porttitor vivamus consequat sit facilisis ultricies.",
+        "Our team of seasoned advisors offers step-by-step guidance, providing tailored counseling to help you make confident, well-informed decisions about your child's education and future.",
       icon: "/check.svg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Skill-Based Evaluations",
       description:
-        "Placerat faucibus cursus erat est massa ultricies porttitor vivamus facilisis.",
+        "With our customized mock tests and assessments, we identify your child's strengths and areas for growth, enabling a more precise school placement that aligns with their abilities and aspirations.",
       icon: "/check.svg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "In-Depth School Profiles",
       description:
-        "Felis nec mi dignissim pharetra placerat cursus erat massa ultricies porttitor.",
+        "Edu Chacha delivers comprehensive insights into schools, covering academics, extracurricular activities, and facilities, empowering you to make the best choice for your child's development.",
       icon: "/check.svg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Honest and Transparent Service",
       description:
-        "Vivamus consequat sit facilisis felis nec mi dignissim pharetra placerat.",
+        "We prioritize trust by maintaining a clear and straightforward approach. Charging parents instead of schools ensures our advice remains impartial, reliable, and focused solely on your child's interests.",
       icon: "/check.svg",
     },
     {
-      title: "Lorem Ipsum",
+      title: "Comprehensive Support from Start to Finish",
       description:
-        "Ultricies porttitor vivamus consequat sit facilisis cursus erat est massa.",
+        "From your first consultation to admission follow-ups, Edu Chacha provides complete assistance at every stage of the school selection process, making your journey smooth, stress-free, and rewarding.",
       icon: "/check.svg",
     },
   ];
 
   return (
-    <div className="py-20">
+    <div className="py-16">
       <h1 className="text-[#323232] text-[36px] font-bold text-center ">
         Why Choose Us?
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2  items-center pt-12">
         <div>
           <Image
             src="/edu stick.gif"
             alt="whychooseus"
             width={1000}
             height={1000}
-            className="w-[480px] h-[300px] mx-auto"
+            className="w-[550px] h-[350px] mx-auto"
           />
         </div>
 
         <div>
           {contentArray.map((item, index) => (
-            <div key={index} className="flex gap-4 mb-6 px-8 md:px-0">
+            <div key={index} className="flex gap-4 mb-6 px-8 md:px-10">
               <Image
                 src={item.icon}
                 alt={item.title}
