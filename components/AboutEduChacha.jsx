@@ -93,18 +93,7 @@ const AboutEduChacha = () => {
           </button>
 
           <div className="p-[46px] text-justify overflow-y-auto h-full text-[13px]">
-            Go Edu is India&apos;s trusted platform for discovering the best boarding
-            schools, dedicated to offering unbiased, detailed information to
-            help families make well-informed choices. We simplify school
-            selection, bringing clarity and confidence to parents and students
-            alike.
-            <br />
-            <br />
-            Driven by a commitment to educational transparency, Go Edu combines
-            insightful listings, genuine reviews, and comprehensive school
-            profiles. Our mission is to empower families with accurate,
-            accessible resources and guide them toward the ideal academic
-            environment tailored to their needs.
+          Edu Chacha is your trusted companion for finding exceptional boarding schools across India. Our user-friendly platform streamlines the school search journey, offering in-depth listings and clear information. Whether you&apos;re looking for top academic programs, modern amenities, or a supportive atmosphere, Edu Chacha empowers you to make the best decisions for your child&apos;s education. Count on us to help you explore the wide array of boarding schools nationwide with confidence.
           </div>
         </div>
       </div>
@@ -236,17 +225,7 @@ const AboutEduChacha = () => {
               <div
                 className={`h-full px-[100px] overflow-y-auto  text-[1rem]  `}
               >
-                Go Edu is India&apos;s trusted platform for discovering the best
-                boarding schools, dedicated to offering unbiased, detailed
-                information to help families make well-informed choices. We
-                simplify school selection, bringing clarity and confidence to
-                parents and students alike. <br />
-                <br />
-                Driven by a commitment to educational transparency, Go Edu
-                combines insightful listings, genuine reviews, and comprehensive
-                school profiles. Our mission is to empower families with
-                accurate, accessible resources and guide them toward the ideal
-                academic environment tailored to their needs.
+                Edu Chacha is your trusted companion for finding exceptional boarding schools across India. Our user-friendly platform streamlines the school search journey, offering in-depth listings and clear information. Whether you&apos;re looking for top academic programs, modern amenities, or a supportive atmosphere, Edu Chacha empowers you to make the best decisions for your child&apos;s education. Count on us to help you explore the wide array of boarding schools nationwide with confidence.
                 <div className="flex justify-center items-center text-[#323232] space-x-60 pt-10">
                   <div className="space-y-1">
                     <Image
