@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
-// import MascotAnimation from "./MascotAnimation";
 import Image from "next/image";
 
 const AboutusEduChacha = () => {
   return (
     <>
-      {/* <div className="absolute">
-        <MascotAnimation />
-      </div> */}
+     
 
       <div className="bg-background-button">
         <h1
@@ -71,7 +68,7 @@ const AboutusEduChacha = () => {
               WHO WE ARE
               </p>
               <img
-                src="/educhachalogo.png"
+                src="/sclorelogo.png"
                 className="w-[100px] h-[130px] md:h-[160px] md:w-[150px]"
                 alt="Mission logo"
               />
