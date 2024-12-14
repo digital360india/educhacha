@@ -589,10 +589,38 @@ export default function Filter({ filterdata, setfilterdata }) {
 
           <hr />
 
-          <div className="space-y-3">
+          <div className="space-y-3 md:space-y-2">
             <p className="text-[14px] font-semibold">Type</p>
             <div className="flex flex-wrap gap-x-3 md:gap-y-3 gap-y-5 text-[12px]">
-            <div className="flex justify-between pl-1 min-w-[140px] ">
+              <div className="flex justify-between min-w-[140px] ">
+                <p>Boarding</p>
+                <button
+                  className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
+                  onClick={() => handleType("full_boarding_schools")}
+                >
+                  {filterdata.type.includes("full_boarding_schools") ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#02618f"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="m2.75 8.75l3.5 3.5l7-7.5"
+                      />
+                    </svg>
+                  ) : (
+                    ""
+                  )}
+                </button>
+              </div>
+
+              <div className="flex justify-between pl-1 min-w-[140px] ">
                 <p>Day Boarding</p>
                 <button
                   className="bg-[#D9D9D9] w-[20px] h-[20px] grid place-content-center rounded-sm"
