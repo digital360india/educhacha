@@ -92,7 +92,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className="hidden md:block w-full absolute top-0 bg-[#09395370] backdrop-blur z-40"
+        className="hidden md:block w-full absolute top-0 bg-transparent  backdrop-blur z-40"
        
       >
         <div className="justify-between  items-center h-[80px] flex px-10">
@@ -116,7 +116,7 @@ const Navbar = () => {
                 return (
                   <li
                     key={link.name}
-                    className={`text-[#FFFFFF] text-[1rem] py-2 px-5   ${
+                    className={`text-[#093953] text-[1rem] py-2 px-5   ${
                       activeButton === link.name.toLowerCase()
                         ? "text-[#FFFFFF] font-semibold rounded-lg"
                         : ""
