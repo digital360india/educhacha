@@ -24,76 +24,68 @@ export default function page() {
             />
           </div>
           <p className="text-[24px] font-semibold">
-            Welcome to Go Edu&apos;s Privacy Policy
+            Welcome to Edu Chacha&apos;s Privacy Policy
           </p>
           <p>
-            At Go Edu, protecting your privacy is a top priority. This policy
-            outlines the types of information we collect, how it&apos;s used,
-            and our commitment to secure your data. It applies specifically to
-            Go Edu&apos;s website and related electronic communications.
+            Your privacy is our priority at Edu Chacha. This policy outlines how
+            we collect, use, and protect your information while ensuring
+            complete transparency.
           </p>
           <p>
             {" "}
-            <p className="text-[24px] font-semibold">
-              Information We Collect and How It&apos;s Used
-            </p>
-            Go Edu collects various details to enhance your experience. This
-            includes basic personal information, connection details, and
-            user-generated content like feedback. Your information helps us
-            deliver tailored services, notify you of updates, and ensure a
-            smooth, personalized experience.
+            <p className="text-[24px] font-semibold">What We Collect and Why</p>
+            To provide you with a seamless and personalized experience, we may
+            collect basic personal information such as your name, email, and
+            preferences. This information helps us guide you toward the right
+            educational opportunities and keep you updated about important
+            developments.
           </p>
           <p>
             <p className="text-base font-semibold mb-1">
-              Automated Data Collection and Purpose
+              Understanding User Behavior
             </p>
-            To improve functionality, our site employs technology that gathers
-            insights into device usage, browsing activity, and preferences. This
-            allows us to deliver optimized services, maintain account
-            communication, fulfill agreements, and keep you updated on any
-            website or service changes.
+            We use technology to analyze browsing activity and preferences.
+            These insights help us refine our platform, improve user experience,
+            and develop features that align with your needs.
           </p>
           <p>
             <p className="text-base font-semibold mb-1">
-              Our Commitment to Data Security
+              Protecting Your Information
             </p>
-            Safeguarding your information is central to our mission. Go Edu has
-            established robust security measures to prevent unauthorized access
-            or alteration. However, while we take extensive precautions,
-            absolute security over the internet cannot be guaranteed.
+            Edu Chacha employs advanced security measures to safeguard your data
+            against unauthorized access or misuse. While no system is entirely
+            foolproof, we are committed to minimizing risks and ensuring
+            responsible data handling.
           </p>
           <p>
             <p className="text-[24px] font-semibold">
               Responsible Information Sharing
             </p>
-            Go Edu may share aggregated, anonymized information, or personal
-            data with affiliates and trusted partners to support our services.
-            Personal data sharing occurs only as outlined here, with your
-            consent, or for specific services you&apos;ve requested.
+            We may share limited data with trusted partners or service providers
+            to enhance your experience. This is done strictly within defined
+            parameters and with your consent where necessary.
           </p>
+          <p>
+            <p className="text-[24px] font-semibold">Transparent Updates</p>
+            As our platform grows, our privacy practices may evolve. We&apos;ll
+            ensure that any significant updates to this policy are communicated
+            clearly, so you always know how your information is handled.
+          </p>
+
           <p>
             <p className="text-[24px] font-semibold">
-              Updates to Our Privacy Policy{" "}
+              Need Help? Reach Out Anytime
             </p>
-            As part of our commitment to transparency, Go Edu regularly reviews
-            and updates its privacy practices. Any significant updates will be
-            noted on our homepage, ensuring that you remain informed.
-          </p>
-          <p>
-            <p className="text-[24px] font-semibold">
-              Changes to Our Privacy Policy
-            </p>
-            We regularly update our privacy policy on this page. Significant
-            changes in how we handle user information will be communicated
-            through a notice on the website's homepage.
-          </p>
-          <p>
-            <p className="text-[24px] font-semibold">How to Reach Us</p>
-            We&apos;re here for any privacy-related inquiries or feedback. You
-            can contact us directly via email or phone for assistance: :
+            If you have questions or concerns about your privacy, we&apos;re
+            here to assist you:
             <br />
             <p>Email: info@goedu.in</p>
             <p>Contact Number:01353530324, 9557695360</p>
+            <p>
+              Thank you for trusting Edu Chacha. We&apos;re committed to
+              protecting your privacy as you explore educational opportunities
+              with us.
+            </p>
           </p>
         </div>
       </div>

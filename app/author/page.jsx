@@ -49,46 +49,19 @@ export default function page() {
                 <p className="text-black">Educational Content Specialist</p>
               </div>
               <p>
-                Hi, I&apos;m Vaibhav Negi! With a deep passion for education and
-                a knack for crafting meaningful content, I have spent over three
-                years in digital marketing, focusing primarily on the
-                educational sector. Writing has always been my way of connecting
-                with people, and throughout my career, I've been fortunate to
-                create impactful content that helps students, parents, and
-                educators alike.
+              Hello! I&apos;m Vaibhav Negi, an education advocate and digital content expert with over three years of experience in crafting insightful, student-focused resources. My journey in the education sector began with a desire to make complex concepts and processes easier for families to navigate. Today, I&apos;m proud to be part of Edu Chacha, where I create meaningful content that bridges the gap between questions and solutions.
               </p>
               <p>
-                My journey in content creation began in digital marketing, where
-                I quickly found my true calling within the education niche.
-                Since then, I&apos;ve collaborated with several educational
-                platforms, offering content that guides students and families,
-                explores emerging trends, and supports educators in their
-                mission. My goal is to create content that informs and inspires
-                curiosity and confidence.
+              At Edu Chacha, my focus is on simplifying the school search process, providing detailed and actionable insights that empower parents and students. Whether I&apos;m writing about school admissions, campus facilities, or academic trends, my goal is to ensure that every family feels informed and confident in their educational decisions.
               </p>
               <p>
-                At Go Edu, I specialize in creating insightful, trustworthy, and
-                contextually relevant content for the Indian education
-                landscape. My writing is tailored to empower parents and
-                students in selecting the best boarding schools by providing
-                in-depth details on each institution&apos;s culture, curriculum,
-                and offerings. I&apos;m committed to ensuring each article,
-                guide, and review is as enlightening as it is engaging,
-                capturing the unique aspects of India&apos;s diverse educational
-                framework.
+              Having collaborated with various platforms in the education space, I&apos;ve developed a deep understanding of what matters most to families: trust, relevance, and reliability. I bring these principles to every piece of content I create, ensuring it resonates with India&apos;s diverse and dynamic education ecosystem.
               </p>
               <p>
-                Beyond education, I&apos;ve expanded my experience as a
-                freelance writer with Sportskeeda, diving into the sports domain
-                and refining my versatility in adapting to different audiences.
-                This diversity in experience has sharpened my ability to
-                resonate with readers, no matter the topic while maintaining
-                quality and authenticity in each piece.
+              Beyond the education sector, I&apos;ve honed my skills in digital storytelling through freelance projects in lifestyle and sports writing. These experiences have taught me the value of connecting with readers on a personal level while maintaining a commitment to quality and authenticity.
               </p>
               <p>
-                At Go Edu, my mission is to simplify and enrich the school
-                selection process by delivering content that helps students and
-                their families make informed decisions.
+              At Edu Chacha, I&apos;m dedicated to helping families navigate their educational journeys with clarity and confidence. Through reliable, well-researched content, I strive to make Edu Chacha a trusted companion for parents and students alike.
               </p>
             </div>
           </div>

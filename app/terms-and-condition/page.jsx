@@ -23,142 +23,104 @@ const TermsAndCondition = () => {
             />
           </div>
           <p className="text-[24px] font-semibold">
-            Welcome to Go Edu&apos;s Terms and Conditions
+            Welcome to Edu Chacha&apos;s Terms and Conditions
           </p>
           <p>
-            Thank you for choosing Go Edu! We&apos;re here to connect students
-            and parents with top boarding schools in India through an accessible
-            and trustworthy platform. By using our website, you agree to these
-            terms, which are designed to ensure a positive, efficient experience
-            for everyone.
+            We&apos;re thrilled to welcome you to Edu Chacha, where educational
+            guidance meets simplicity and trust. These terms outline how you can
+            use our platform responsibly and effectively.
           </p>
           {/* Please read these terms carefully. */}
           <p>
-            {/* {" "}
-            <p className="text-base font-semibold mb-1">Terms Acceptance</p>
-            By using our services, you agree to adhere to the terms outlined
-            here. If you disagree with these terms, please refrain from using
-            our website and services. */}
-            {/* <p>
-              <p className="text-base font-semibold mb-1">Usage of Website</p>
-              <p>
-                {" "}
-                Lawful Usage: You agree to use our website and services solely
-                for lawful purposes.
-              </p>
-              Prohibited Activities: You must not transmit any malicious code or
-              engage in activities that disrupt the operation of our website.
-            </p> */}
-            {/* <p>
-              <p className="text-base font-semibold mb-1">
-                Service Changes and Pricing
-              </p>{" "}
-              Edu 123 reserves the right to modify or discontinue any service or
-              feature without prior notice. Prices for our services are subject
-              to change without warning.
-            </p> */}
             <p className="pb-4">
               <p className="text-[20px]  font-bold mb-1">
-                Embracing Responsible Use
+                A Platform for Positive Exploration
               </p>
-              Go Edu is dedicated to helping you make informed educational
-              choices. We ask that you engage with our platform respectfully,
-              maintaining a safe space for all users.
+              Edu Chacha is designed to assist students and families in making
+              informed decisions about education. We encourage respectful and
+              constructive use of our resources to maintain a supportive
+              environment for all users.
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Keeping Services Relevant and Evolving
+                Constantly Evolving for You
               </p>
-              To continually meet your needs, Go Edu may enhance or update its
-              offerings and features from time to time. Our goal is to provide
-              you with the most relevant and valuable services possible.
+              To stay relevant in a fast-changing education landscape, we
+              regularly update our tools and features. Our goal is to ensure
+              that Edu Chacha remains your reliable source for all things
+              education.
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Secure and Personalized Accounts
+                Your Account, Your Responsibility
               </p>
-              When creating an account on Go Edu, rest assured that we&apos;re
-              committed to providing a secure experience. We encourage you to
-              keep your login details private for added protection.
+              When you create an account with Edu Chacha, you take the first
+              step toward personalized guidance. Please keep your account
+              details secure and up-to-date to enjoy uninterrupted access to our
+              platform
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Trusted Information, Every Time
+                Trustworthy and Accurate Information
               </p>
-              Go Edu strives to offer the most accurate and up-to-date
-              information on schools, admissions, and related educational
-              insights. Our content is regularly updated to reflect the latest
-              developments, so you can confidently rely on our resources.
+              At Edu Chacha, accuracy is our top priority. Our team works hard
+              to ensure that all information about schools, admissions, and
+              programs is current and reliable. However, we recommend verifying
+              specific details directly with institutions for complete
+              assurance.
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Valuing Your Feedback
+                We Value Your Voice
               </p>
-              Your feedback matters to us! We welcome any comments or
-              suggestions, as they help us improve and better serve you.
+              Your feedback is the compass that guides our growth. Share your
+              thoughts and suggestions with us to help improve your experience
+              on Edu Chacha.
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                A Commitment to Your Privacy
+                Your Privacy, Our Promise
               </p>
-              Go Edu respects your privacy. All information you provide is
-              handled with care, and we&apos;re here to answer any questions
-              about how your details are used to enhance your experience.
+              We respect and protect your privacy. Any data you share is used
+              only to enhance your experience on our platform. Please refer to
+              our privacy policy for more details.
             </p>{" "}
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Quick Corrections and Timely Updates
+                Fostering Constructive Engagement
               </p>
-              If there&apos;s ever an adjustment needed, our team at Go Edu
-              promptly updates information to maintain clarity and accuracy for
-              all users.
+              Edu Chacha thrives on collaboration and positive interactions. We
+              request all users to engage respectfully with our content and
+              community.
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Positive Engagement with Content
+                Service Reliability
               </p>
-              At Go Edu, our goal is to support your educational journey. We ask
-              that users engage with our site and its content positively,
-              keeping the experience beneficial for everyone involved.
+              While we aim to provide uninterrupted access to our services,
+              occasional technical issues may occur. Rest assured, our team is
+              always ready to resolve any disruptions promptly.
             </p>
             <p className="pb-4">
               <p className="text-[20px] font-semibold mb-1">
-                Supporting Uninterrupted Access
+                Adapting to Change
               </p>
-              While we strive for smooth, uninterrupted service, occasional
-              technical issues may occur. Rest assured, our team is committed to
-              resolving any interruptions as quickly as possible.
-            </p>
-            <p className="pb-4">
-              <p className="text-[20px] font-semibold mb-1">
-                Fostering a Safe and Trustworthy Platform
-              </p>
-              Using Go Edu means joining a community dedicated to genuine
-              support in the educational journey. We appreciate your role in
-              keeping the experience safe and positive for everyone.
-            </p>
-            <p className="pb-4">
-              <p className="text-[20px] font-semibold mb-1">
-                Adapting to Your Needs
-              </p>
-              We value flexibility and growth, so Go Edu&apos;s terms may evolve
-              to best serve our users. For any major updates, we will make sure
-              you&apos;re informed and up-to-date on any adjustments to our
-              services.
+              As our platform evolves, we may update these terms to reflect new
+              features or improvements. Significant updates will be communicated
+              clearly to ensure you&apos;re always informed.
             </p>
           </p>
           <p className="pb-4">
-            <p className="text-[24px] font-semibold">Contact Us Anytime</p>
-            If you have questions, feedback, or need further assistance,
-            we&apos;re here for you! Please reach out to us at:{" "}
+            <p className="text-[24px] font-semibold">Here to Support You</p>
+            If you have any questions, concerns, or feedback, we&apos;re just a
+            message away:
             <br />
             <p>Email: info@goedu.in</p>
             <p>
               Contact Number: 01353530324, 9557695360
-             
-             <p className="pt-4">
-              Thank you for trusting Go Edu with your educational journey. We
-              look forward to supporting you every step of the way
+              <p className="pt-4">
+                Thank you for choosing Edu Chacha. Together, let&apos;s make
+                your educational journey a smooth and rewarding experience.
               </p>
             </p>
           </p>
