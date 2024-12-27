@@ -106,7 +106,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="h-[400px] md:h-[440px] flex justify-center items-center"
+              className="h-[400px] md:h-[460px] flex justify-center items-center"
             >
               <div
                 className="bg-white w-[370px] h-[300px] md:h-[380px] mx-6 p-8 md:mx-14 rounded-lg relative "
