@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import herobanner from "@/public/herobanner.svg";
+// import herobanner from "@/public/herobanner.svg";
 
 const HeroEduChacha = () => {
   return (
@@ -44,9 +44,9 @@ const HeroEduChacha = () => {
         </div>
       </div> */}
       <div>
-        <div className="mt-[86px]">
+        <div className="mt-[84px]">
           <Image
-            src="/bannerbg2.svg"
+            src="/bannerbg2.png"
             width={1000}
             height={1000}
             alt="banner"
@@ -55,7 +55,7 @@ const HeroEduChacha = () => {
         </div>
 
         <div className="flex justify-end mr-12">
-          <div className="absolute bottom-[22%]  border-[8px] md:border-[14px] border-[#093655] rotate-3 shadow-intense">
+          <div className="absolute bottom-[21%]  border-[8px] md:border-[14px] border-[#093655] rotate-3 shadow-intense">
             <Image
               src="/bannereduchacha.gif"
               width={400}
@@ -68,10 +68,10 @@ const HeroEduChacha = () => {
           <div className="absolute -bottom-0 md:bottom-[15%] right-12 md:right-96">
             <Image
               src="/books.svg"
-              width={183}
-              height={219}
+              width={1000}
+              height={1000}
               alt="books"
-              className="w-[120px] h-[150px] md:w-[183px] md:h-[219px]"
+              className="w-[120px] h-[150px] md:w-[170px] md:h-[205px]"
             />
           </div>
         </div>
