@@ -55,17 +55,17 @@ const HeroEduChacha = () => {
         </div>
 
         <div className="flex justify-end mr-12">
-          <div className="absolute bottom-[22%]  border-[8px] md:border-[16px] border-[#093655] rotate-3 shadow-intense">
+          <div className="absolute bottom-[22%]  border-[8px] md:border-[14px] border-[#093655] rotate-3 shadow-intense">
             <Image
               src="/bannereduchacha.gif"
               width={400}
               height={460}
               alt="chacha"
-              className="w-[200px] h-[280px] lg:w-[400px] lg:h-[460px]"
+              className="w-[200px] h-[280px] lg:w-[380px] lg:h-[430px]"
             />
           </div>
 
-          <div className="absolute -bottom-0 md:bottom-28 right-12 md:right-96">
+          <div className="absolute -bottom-0 md:bottom-[15%] right-12 md:right-96">
             <Image
               src="/books.svg"
               width={183}
