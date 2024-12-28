@@ -64,11 +64,11 @@ export default function ConsultationPopup({ setClose }) {
 
         <div className="w-[80vw] h-[539px] hidden md:block z-0 ">
           <Image
-            src="/popup.svg"
+            src="/educhachaform.png"
             alt="School choice"
             width={1000}
             height={1000}
-            className="w-[660px] h-full object-cover rounded-lg"
+            className="w-[660px] h-full  rounded-lg"
           />
         </div>
 

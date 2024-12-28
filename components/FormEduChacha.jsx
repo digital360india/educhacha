@@ -54,7 +54,7 @@ const FormEduChacha = () => {
       <div className="flex gap-20 justify-between items-center">
         <div className="w-[795px] h-[539px] md:block hidden  ">
           <Image
-            src="/bookingformgoedu.svg"
+            src="/educhachaform.png"
             alt="School choice"
             width={1000}
             height={1000}
