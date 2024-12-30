@@ -118,7 +118,7 @@ const Navbar = () => {
                     key={link.name}
                     className={`text-[#093953] text-[1rem] py-2 px-5   ${
                       activeButton === link.name.toLowerCase()
-                        ? "text-[#FFFFFF] font-semibold rounded-lg"
+                        ? " font-semibold rounded-lg"
                         : ""
                     } ${hideOnMd ? "hidden lg:block" : ""}`}
                   >
