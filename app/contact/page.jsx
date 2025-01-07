@@ -48,20 +48,20 @@ const Contact = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <SlEnvolope className="h-8 w-5 " />
-                  <div>info@goedu.in</div>
+                  <div>info@educhacha.com</div>
                 </li>
                
 
                 <div className="flex justify-between">
                   <div className="flex gap-4 pt-5  ">
                     <a
-                      href="https://www.instagram.com/goedu_india/?igsh=MWtyaGFocGo4cHA0bQ%3D%3D"
+                      href="https://www.instagram.com/educhacha_india?igsh=MTQyZHk2ZzYwa284Ng=="
                       target="_blank"
                     >
                       <BsInstagram className="w-5 h-5" />
                     </a>
                     <a
-                      href="https://www.facebook.com/people/GoEdu/61552427439719/"
+                      href="https://www.facebook.com/educhachaindia?mibextid=ZbWKwL"
                       target="_blank"
                     >
                       <BiLogoFacebook className="w-5 h-5" />

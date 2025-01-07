@@ -15,6 +15,7 @@ async function getCategoryData(slug) {
 }
 
 export async function generateMetadata({ params }) {
+  console.log(params);
   const categoryData = await getCategoryData(params.slug);
 
   return {
@@ -23,12 +24,12 @@ export async function generateMetadata({ params }) {
     keywords: categoryData?.keywords,
     authors: [{ name: categoryData?.author }],
     alternates: {
-      canonical: `https://www.edu123.in/category/${params.slug}`,
+      canonical: `https://www.educhacha.com/category/${params.slug}`,
     },
     openGraph: {
       title: categoryData?.title,
       description: categoryData?.meta_description,
-      url: `https://www.edu123.in/${params.slug}`,
+      url: `https://www.educhacha.com/${params.slug}`,
       locale: "en_US",
       type: "website",
       images: [{ url: categoryData?.featuredImg }],
@@ -47,15 +48,14 @@ export async function generateMetadata({ params }) {
       description: categoryData?.meta_description,
       card: categoryData?.featuredImg,
       image: categoryData?.featuredImg,
-      site: "@edu123",
-      creator: "@edu123",
+      site: "@educhacha",
+      creator: "@educhacha",
     },
   };
 }
 
 export default async function ListingPage({ params }) {
   const categoryData = await getCategoryData(params.slug);
-
   return (
     <>
       <Head>

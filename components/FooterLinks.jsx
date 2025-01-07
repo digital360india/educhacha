@@ -40,7 +40,7 @@ export const FooterLinks = () => {
              
               <Link
                 href={
-                  "https://www.educhacha.com/category/boarding-schools-in-bangaluru"
+                  "https://www.educhacha.com/category/boarding-schools-in-bangalore"
                 }
               >
                 Boarding Schools in Bangalore
@@ -182,7 +182,7 @@ export const FooterLinks = () => {
 
         <div className="text-center  pb-4">
           <p>
-            <a href="mailto:info@goedu.in">info@goedu.in</a>
+            <a href="mailto:info@educhacha.com">info@educhacha.com</a>
           </p>
         </div>
       </div>

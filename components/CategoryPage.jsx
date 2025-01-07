@@ -2,7 +2,7 @@ import React from "react";
 import SchoolCard from "./SchoolCard";
 
 export default function CategoryPage({ categoryData }) {
-  
+  console.log(categoryData);
   return (
     <div className="flex md:flex-col flex-col-reverse">
       <div>
