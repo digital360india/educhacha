@@ -262,12 +262,18 @@ const SchoolCardMini = ({ data, index, citySlug }) => {
               rating={data?.fields?.rating}
               review={data?.fields?.numOfReviews}
             />
-            <div className="text-[#505050] flex pt-[1px] flex-col ">
-              <p className="text-[12px] text-[#898989]">Annual Fees</p>
-              <p className="text-[18px] font-semibold text-background-color ">
-                ₹{Number(data?.fields?.feefrom).toLocaleString("en-IN")} - ₹
-                {Number(data?.fields?.feeto).toLocaleString("en-IN")}
-              </p>
+           <div className="text-[#898989] flex pt-[1px] flex-col ">
+              <p className="text-[12px]  text-[#898989]">Annual Fees</p>
+              {(data?.feilds?.feefrom && data?.feilds?.feeto) !== undefined ? (
+                <p className="text-[16px] xl:text-[22px] text-background-dark">
+                  ₹{Number(data?.fields?.feefrom).toLocaleString("en-IN")} - ₹
+                  {Number(data?.fields?.feeto).toLocaleString("en-IN")}
+                </p>
+              ) : (
+                <p className="text-[16px] xl:text-[22px] text-background-dark">
+                  Not Specified
+                </p>
+              )}
             </div>
 
             {/* <div className="w-full bg-background-color rounded-l-2xl flex justify-center items-center float-right">
