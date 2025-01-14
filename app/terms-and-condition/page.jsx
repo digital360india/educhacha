@@ -115,7 +115,7 @@ const TermsAndCondition = () => {
             If you have any questions, concerns, or feedback, we&apos;re just a
             message away:
             <br />
-            <p>Email: info@educhacha.com</p>
+            <p>Email: educhachaindia@gmail.com</p>
             <p>
               Contact Number: 01353530324, 9557695360
               <p className="pt-4">

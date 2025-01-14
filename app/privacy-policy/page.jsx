@@ -79,7 +79,7 @@ export default function page() {
             If you have questions or concerns about your privacy, we&apos;re
             here to assist you:
             <br />
-            <p>Email: info@educhacha.com</p>
+            <p>Email: educhachaindia@gmail.com</p>
             <p>Contact Number:01353530324, 9557695360</p>
             <p>
               Thank you for trusting Edu Chacha. We&apos;re committed to

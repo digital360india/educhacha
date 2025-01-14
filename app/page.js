@@ -71,7 +71,7 @@ export async function generateMetadata() {
         alternateName: "Educhacha",
         areaServed: "India",
         availableLanguage: "English",
-        email: "info@educhacha.com",
+        email: "educhachaindia@gmail.com",
         telephone: "9557695360",
         url: "https://www.educhacha.com/",
       },
