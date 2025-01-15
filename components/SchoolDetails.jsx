@@ -1,10 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { signIn, signOut, useSession } from "next-auth/react";
-import { StarRatingschool, StarRating } from "./StarRating";
-import { Line } from "rc-progress";
+import { signIn,  useSession } from "next-auth/react";
+import {  StarRating } from "./StarRating";
 import ReviewForm from "./ReviewForm";
-import Enquire from "./Enquire";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -317,11 +315,7 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
               >
                 Enquire Now
               </button>
-              <Enquire
-                isOpen={isPopupOpen}
-                onClose={closePopup}
-                school={school?.name}
-              />
+            
             </div>
             <StarRating
               rating={Math.ceil(school?.rating)}
@@ -357,11 +351,7 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
                   >
                     Enquire Now
                   </button>
-                  <Enquire
-                    isOpen={isPopupOpen}
-                    onClose={closePopup}
-                    school={school?.name}
-                  />
+                 
                 </div>
               </div>
               <StarRating
