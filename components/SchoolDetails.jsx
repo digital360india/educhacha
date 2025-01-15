@@ -278,48 +278,6 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
   }, [lastScrollY]);
   return (
     <>
-      {/* <section className="hidden md:block">
-        <div
-          className="relative     grid place-content-center bg-no-repeat h-[60vh] mt-10"
-          style={{
-            backgroundImage: ` url("/aboutbanner.svg")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className=" ">
-            <div className="md:text-background-color  text-center flex flex-col md:justify-center md:items-center ">
-              <div className="flex flex-col gap-6 font-bold p-2">
-                <p className="text-4xl  text-left  md:text-center">
-                  {school?.name}
-                </p>
-                <div className="text-left flex justify-center ">
-                  <button
-                    className="w-[180px]  shadow-md h-[40px] bg-background-color text-white rounded-lg"
-                    // onClick={openPopup}
-                    onClick={toggleBookingPopup}
-                  >
-                    Enquire Now
-                  </button>
-                  <Enquire
-                    isOpen={isPopupOpen}
-                    onClose={closePopup}
-                    school={school?.name}
-                  />
-                </div>
-              </div>
-              <StarRatingschool
-                rating={Math.ceil(school?.rating)}
-                need="yes"
-                review={school?.numOfReviews}
-              />
-            </div>
-            {isOpenpopup && (
-              <ConsultationPopup setClose={toggleBookingClosePopup} />
-            )}
-          </div>
-        </div>
-      </section> */}
       <div
         className="relative w-full h-[100vh] md:h-[105vh] bg-cover bg-center pt-8  md:block hidden"
         style={{ backgroundImage: `url(${herobanner.src})` }}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 
 export const Footer = () => {
   return (
@@ -20,16 +20,6 @@ export const Footer = () => {
 
               <div className="space-y-2 text-[12px] md:text-[14px] font-semibold text-[#323232]">
                 <p className="text-[20px] text-[#323232] md:hidden">Contact</p>
-                {/* <div className="flex gap-2">
-                  <Image
-                    width={1000}
-                    height={1000}
-                    alt="logo"
-                    src="/Location.svg"
-                    className="w-[20px] h-[20px]"
-                  />
-                  <p className="">B, 36, Nehru Colony Rd, C Block, Nehru Colony, Dalanwala, Dehradun, Uttarakhand 248001</p>{" "}
-                </div> */}
 
                 <div className="flex gap-2">
                   <Image
@@ -62,7 +52,9 @@ export const Footer = () => {
                     className="w-[20px] h-[20px]"
                   />
                   <p>
-                    <a href="mailto:educhachaindia@gmail.com">educhachaindia@gmail.com</a>
+                    <a href="mailto:educhachaindia@gmail.com">
+                      educhachaindia@gmail.com
+                    </a>
                   </p>
                 </div>
               </div>
@@ -105,18 +97,6 @@ export const Footer = () => {
               >
                 <BsFacebook />
               </Link>
-              {/* 
-              <Image
-                src="/TwitterX.svg"
-                alt="twitter"
-                width={1000}
-                height={1000}
-                className="w-[23px] h-[23px]"
-              /> */}
-              {/* 
-              <Link href="/" target="_blank">
-                <BsLinkedin />
-              </Link> */}
 
               <Link
                 href="https://www.instagram.com/goedu_india?igsh=MWtyaGFocGo4cHA0bQ=="

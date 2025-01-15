@@ -12,7 +12,7 @@ export default function Popup() {
     email: "",
     phone: "",
     classes: "",
-    source: "EduChacha - https://educhacha.vercel.app/",
+    source: "EduChacha - https://www.educhacha.com/",
   });
 
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -49,7 +49,7 @@ export default function Popup() {
           email: "",
           phone: "",
           classes: "",
-          source: "EduChacha - https://educhacha.vercel.app/",
+          source: "EduChacha - https://www.educhacha.com/",
 
         });
       } else {

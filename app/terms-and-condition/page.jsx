@@ -1,4 +1,3 @@
-import Hero from "@/components/Hero";
 
 export async function generateMetadata() {
   return {
@@ -11,7 +10,7 @@ export async function generateMetadata() {
 const TermsAndCondition = () => {
   return (
     <>
-      {/* <Hero /> */}
+      
       <div className="mt-5 p-[35px] md:p-[100px] ">
         <div className=" bg-[#F8F8F8] p-[40px] space-y-5">
           <p className="text-[32px] font-semibold">Terms And Condition</p>

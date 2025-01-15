@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from "next/image"; // Import Image from Next.js
+import Image from "next/image"; 
 import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
 
@@ -11,7 +11,7 @@ export default function ConsultationPopup({ setClose }) {
     email: "",
     phone: "",
     classes: "",
-    source: "EduChacha - https://educhacha.vercel.app/",
+    source: "EduChacha - https://www.educhacha.com/",
 
   });
 
@@ -25,7 +25,7 @@ export default function ConsultationPopup({ setClose }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loader and disable button
+    setLoading(true);
     console.log(formData);
     try {
       const response = await axios.post(
@@ -39,7 +39,7 @@ export default function ConsultationPopup({ setClose }) {
           email: "",
           phone: "",
           classes: "",
-          source: "EduChacha - https://educhacha.vercel.app/",
+          source: "EduChacha - https://www.educhacha.com/",
         });
       } else {
         alert("Try again");
@@ -47,7 +47,7 @@ export default function ConsultationPopup({ setClose }) {
     } catch (error) {
       alert("An error occurred. Please try again.");
     } finally {
-      setLoading(false); // Re-enable button
+      setLoading(false); 
     }
   };
   return (

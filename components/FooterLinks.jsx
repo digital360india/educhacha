@@ -32,12 +32,10 @@ export const FooterLinks = () => {
               >
                 Boarding Schools in Shimla
               </Link>
-            
             </div>
           </div>
           <div className="flex  flex-col  sm:items-center lg:w-[25vw]       ">
             <div className="flex flex-col">
-             
               <Link
                 href={
                   "https://www.educhacha.com/category/boarding-schools-in-bangalore"
@@ -55,86 +53,6 @@ export const FooterLinks = () => {
             </div>
           </div>
 
-          {/* <div className="lg:w-[25vw]     sm:flex sm:justify-center ">
-            <div className="flex flex-col">
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-chandigarh"
-                }
-              >
-                Boarding Schools in Chandigarh
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-mumbai"
-                }
-              >
-                Boarding Schools in Mumbai
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-faridabad"
-                }
-              >
-                Boarding Schools in Faridabad
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-nainital"
-                }
-              >
-                Boarding Schools in Nainital
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-varanasi"
-                }
-              >
-                Boarding Schools in Varanasi
-              </Link>
-            </div>
-          </div> */}
-
-          {/* <div className="   flex  sm:justify-center lg:w-[25vw]">
-            <div className="flex flex-col">
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-kolkata"
-                }
-              >
-                Boarding Schools in Kolkata
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-udaipur"
-                }
-              >
-                Boarding Schools in Udaipur
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-jaipur"
-                }
-              >
-                Boarding Schools in Jaipur
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-panchgani"
-                }
-              >
-                Boarding Schools in Panchgani
-              </Link>
-              <Link
-                href={
-                  "https://www.educhacha.com/category/boarding-schools-in-sikar"
-                }
-              >
-                Boarding Schools in Sikar
-              </Link>
-            </div>
-          </div> */}
-
           <div className=" flex sm:justify-center sm:mt-0  lg:w-[27vw]">
             <div className="flex flex-col">
               <Link
@@ -145,7 +63,9 @@ export const FooterLinks = () => {
                 Boarding Schools in Hyderabad
               </Link>
               <Link
-                href={"https://www.educhacha.com/category/boarding-schools-in-pune"}
+                href={
+                  "https://www.educhacha.com/category/boarding-schools-in-pune"
+                }
               >
                 Boarding Schools in Pune
               </Link>
@@ -156,12 +76,10 @@ export const FooterLinks = () => {
               >
                 Boarding Schools in Jaipur
               </Link>
-            
             </div>
           </div>
           <div className=" flex sm:justify-center sm:mt-0  lg:w-[27vw]">
             <div className="flex flex-col">
-              
               <Link
                 href={
                   "https://www.educhacha.com/category/boarding-schools-in-nainital"
@@ -182,7 +100,9 @@ export const FooterLinks = () => {
 
         <div className="text-center  pb-4">
           <p>
-            <a href="mailto:educhachaindia@gmail.com">educhachaindia@gmail.com</a>
+            <a href="mailto:educhachaindia@gmail.com">
+              educhachaindia@gmail.com
+            </a>
           </p>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Hero from "@/components/Hero";
 import React from "react";
 
 export async function generateMetadata() {
@@ -12,7 +11,7 @@ export async function generateMetadata() {
 export default function page() {
   return (
     <>
-      {/* <Hero /> */}
+
       <div className="mt-5 p-[35px] md:p-[100px] ">
         <div className=" bg-[#F8F8F8] p-[40px] space-y-5">
           <p className="text-[32px] font-semibold">Privacy Policy</p>

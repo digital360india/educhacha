@@ -79,23 +79,7 @@ export default async function ListingPage({ params }) {
           }}
         />
       </Head>
-      {/* <div className="bg-white overflow-x-hidden">
-        <div className="hidden sm:block">
-          <Hero
-            image="https://res.cloudinary.com/eduminatti-com/image/upload/v1726733029/Edu123/Eduimages/banner_desktop_2.jpg"
-            height="67vh"
-          />
-        </div>
-        <div className="sm:hidden">
-          <Hero
-            need="no"
-            image="https://res.cloudinary.com/eduminatti-com/image/upload/v1726733028/Edu123/Eduimages/mobile_banner.png"
-            height="65vh"
-          />
-        </div>
-        <CategoryPage categoryData={categoryData} />
-        <FAQ categoryData={categoryData} />
-      </div> */}
+
 
 
       <div className="overflow-hidden md:overflow-visible">
