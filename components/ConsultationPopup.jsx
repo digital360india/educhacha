@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 import { RxCross1 } from "react-icons/rx";
 import axios from "axios";
 import { base } from "@/app/api/airtable";
 import { toast } from "react-toastify";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export default function ConsultationPopup({ setClose }) {
   const [loading, setLoading] = useState(false);
@@ -14,7 +16,6 @@ export default function ConsultationPopup({ setClose }) {
     phone: "",
     classes: "",
     source: "EduChacha - https://www.educhacha.com/",
-
   });
 
   const handleChange = (e) => {
@@ -23,6 +24,10 @@ export default function ConsultationPopup({ setClose }) {
       ...prevState,
       [name]: value,
     }));
+  };
+
+  const handlePhoneChange = (value) => {
+    setFormData({ ...formData, phone: value });
   };
 
   const handleSubmit = async (e) => {
@@ -115,7 +120,7 @@ export default function ConsultationPopup({ setClose }) {
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded sm:w-[462px] sm:border-[#D9D9D9]"
+              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
             />
             <input
               required
@@ -124,69 +129,22 @@ export default function ConsultationPopup({ setClose }) {
               placeholder="Your email"
               value={formData.email}
               onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded sm:w-[462px] sm:border-[#D9D9D9]"
+              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
             />
             <div className="flex">
-              <select className="w-[80px] md:w-[100px] h-[39px] border-b-2 border-[#D9D9D9] rounded-l placeholder:text-[#898989] sm:border sm:rounded-l sm:p-2 sm:border-[#D9D9D9]">
-                <option value="🇮🇳">🇮🇳 +91</option>
-                <option value="🇺🇸">🇺🇸 +1</option>
-                <option value="🇬🇧">🇬🇧 +44</option>
-                <option value="🇨🇦">🇨🇦 +1</option>
-                <option value="🇦🇺">🇦🇺 +61</option>
-                <option value="🇳🇿">🇳🇿 +64</option>
-                <option value="🇿🇦">🇿🇦 +27</option>
-                <option value="🇸🇬">🇸🇬 +65</option>
-                <option value="🇦🇪">🇦🇪 +971</option>
-                <option value="🇸🇦">🇸🇦 +966</option>
-                <option value="🇫🇷">🇫🇷 +33</option>
-                <option value="🇩🇪">🇩🇪 +49</option>
-                <option value="🇮🇹">🇮🇹 +39</option>
-                <option value="🇪🇸">🇪🇸 +34</option>
-                <option value="🇧🇷">🇧🇷 +55</option>
-                <option value="🇲🇽">🇲🇽 +52</option>
-                <option value="🇯🇵">🇯🇵 +81</option>
-                <option value="🇰🇷">🇰🇷 +82</option>
-                <option value="🇨🇳">🇨🇳 +86</option>
-                <option value="🇹🇷">🇹🇷 +90</option>
-                <option value="🇷🇺">🇷🇺 +7</option>
-                <option value="🇮🇩">🇮🇩 +62</option>
-                <option value="🇵🇭">🇵🇭 +63</option>
-                <option value="🇻🇳">🇻🇳 +84</option>
-                <option value="🇹🇭">🇹🇭 +66</option>
-                <option value="🇲🇾">🇲🇾 +60</option>
-                <option value="🇳🇬">🇳🇬 +234</option>
-                <option value="🇪🇬">🇪🇬 +20</option>
-                <option value="🇮🇱">🇮🇱 +972</option>
-                <option value="🇰🇪">🇰🇪 +254</option>
-                <option value="🇦🇷">🇦🇷 +54</option>
-                <option value="🇨🇱">🇨🇱 +56</option>
-                <option value="🇵🇪">🇵🇪 +51</option>
-                <option value="🇨🇴">🇨🇴 +57</option>
-                <option value="🇻🇪">🇻🇪 +58</option>
-                <option value="🇺🇦">🇺🇦 +380</option>
-                <option value="🇵🇱">🇵🇱 +48</option>
-                <option value="🇳🇱">🇳🇱 +31</option>
-                <option value="🇧🇪">🇧🇪 +32</option>
-                <option value="🇸🇪">🇸🇪 +46</option>
-                <option value="🇨🇭">🇨🇭 +41</option>
-                <option value="🇦🇹">🇦🇹 +43</option>
-                <option value="🇩🇰">🇩🇰 +45</option>
-                <option value="🇫🇮">🇫🇮 +358</option>
-                <option value="🇮🇪">🇮🇪 +353</option>
-                <option value="🇳🇴">🇳🇴 +47</option>
-                <option value="🇨🇿">🇨🇿 +420</option>
-                <option value="🇸🇰">🇸🇰 +421</option>
-                <option value="🇷🇴">🇷🇴 +40</option>
-                <option value="🇭🇺">🇭🇺 +36</option>
-              </select>
-              <input
-                required
-                type="tel"
-                name="phone"
-                placeholder="Your mobile number"
+              <PhoneInput
+                className="w-full border-[#D9D9D9] border-b-2 rounded md:border md:rounded"
+                country={"in"}
                 value={formData.phone}
-                onChange={handleChange}
-                className="w-full h-[39px] p-2 border-b-2 border-[#D9D9D9] placeholder:text-[#898989] sm:border sm:rounded-r sm:w-[398px] sm:border-[#D9D9D9]"
+                onChange={handlePhoneChange}
+                inputStyle={{
+                  width: "100%",
+                  height: "39px",
+                  border: "none",
+                }}
+                buttonStyle={{
+                  border: "2px solid #D9D9D9",
+                }}
               />
             </div>
 
@@ -196,7 +154,7 @@ export default function ConsultationPopup({ setClose }) {
                 name="classes"
                 value={formData.classes}
                 onChange={handleChange}
-                className="p-2 border-b-2 border-[#D9D9D9] rounded md:w-[143px] w-[120px] h-[39px] placeholder:text-[#898989] md:border md:rounded "
+                className="p-2 border-b-2 border-[#D9D9D9] rounded  w-full h-[39px] placeholder:text-[#898989] md:border md:rounded "
               >
                 <option value="" className="text-[#898989]">
                   Class
@@ -217,17 +175,15 @@ export default function ConsultationPopup({ setClose }) {
                 <option value="Class 12">Class 12</option>
               </select>
             </div>
-            
-              {/* Hidden input for source */}
-              <input
+
+            {/* Hidden input for source */}
+            <input
               type="hidden"
               name="source"
               value={formData.source}
               readOnly
             />
             <div className="md:pt-20 pt-8 cursor-pointer">
-
-
               <button
                 type="submit"
                 disabled={loading}
