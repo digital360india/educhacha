@@ -158,6 +158,8 @@ const AboutusEduChacha = () => {
               />
             </div>
           </div>
+
+          
           <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-10">
             <div className="flex items-center justify-center order-1 md:order-none gap-8 md:gap-0">
               <img
