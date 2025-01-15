@@ -2,6 +2,7 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { IoCallOutline } from "react-icons/io5";
 import { SlEnvolope } from "react-icons/sl";
 import Image from "next/image";
+import { BsInstagram } from "react-icons/bs";
 
 export async function generateMetadata() {
   return {

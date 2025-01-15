@@ -68,7 +68,7 @@ const AboutusEduChacha = () => {
               WHO WE ARE
               </p>
               <img
-                src="/sclorelogo.png"
+                src="/educhachalogo.png"
                 className="w-[100px] h-[130px] md:h-[160px] md:w-[150px]"
                 alt="Mission logo"
               />
