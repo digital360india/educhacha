@@ -91,7 +91,7 @@ export default function ConsultationPopup({ setClose }) {
       <div className="relative md:flex   gap-5  md:items-center bg-white rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[80vw] ">
         <button
           onClick={setClose}
-          className="absolute bg-[#1B6EA1] px-1 py-1 md:px-2 z-50 rounded-full  md:py-2 top-2 right-2 text-2xl font-bold text-white hover:text-gray-900"
+          className="absolute bg-background-color p-1 md:px-2 z-50 rounded-full  md:py-2 top-3 right-2 text-xl md:text-2xl font-bold text-white "
         >
           <div className="flex justify-center items-center">
             <RxCross1 />
@@ -108,11 +108,11 @@ export default function ConsultationPopup({ setClose }) {
           />
         </div>
 
-        <div className="w-full z-50 md:w-[470px] h-full rounded-l-2xl p-8 md:absolute md:top-0 md:right-14 bg-white">
-          <h3 className=" md:text-xl mb-6 text-[#323232]">
-            Fill this form and get in touch with our counsellor
+        <div className="w-full z-50 md:w-[470px] h-full rounded-lg md:rounded-l-2xl md:p-8  md:absolute md:top-0 md:right-14 bg-white">
+        <h3 className=" md:text-xl font-bold text-[#323232] pt-4 px-5 w-[85%]">
+        Fill this form and get in touch with our counsellor
           </h3>
-          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6 p-5">
             <input
               required
               type="text"
@@ -183,11 +183,11 @@ export default function ConsultationPopup({ setClose }) {
               value={formData.source}
               readOnly
             />
-            <div className="md:pt-20 pt-8 cursor-pointer">
+            <div className="md:pt-20 pt-4 cursor-pointer">
               <button
                 type="submit"
                 disabled={loading}
-                className={`md:w-[177px] md:h-[60px] md:px-0 px-8 md:py-0 py-3  bg-[#1B6EA1] text-white p-2 rounded-lg ${
+                className={`md:w-[177px] md:h-[60px] md:px-0 px-8 md:py-0 py-3  bg-background-color text-white p-2 rounded-lg ${
                   loading
                     ? "cursor-not-allowed opacity-70"
                     : "hover:bg-[#1b6ea1c9]"

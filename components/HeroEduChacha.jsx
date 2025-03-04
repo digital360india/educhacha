@@ -6,7 +6,7 @@ const HeroEduChacha = () => {
     <>
       
       <div>
-        <div className="mt-[84px]">
+        <div className="mt-[60px] md:mt-[84px]">
           <Image
             src="/bannerbg2.png"
             width={1000}
