@@ -42,7 +42,7 @@ const WhyChooseUsEduChacha = () => {
   ];
 
   return (
-    <div className="py-16">
+    <div className="pb-10 md:py-16 ">
       <h1 className="text-[#323232] text-[36px] font-bold text-center ">
         Why Choose Us?
       </h1>
