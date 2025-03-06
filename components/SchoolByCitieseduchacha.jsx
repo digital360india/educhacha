@@ -38,7 +38,7 @@ const SchoolByCitieseduchacha = () => {
       <div>
         <div className="w-full h-auto  bg-no-repeat bg-cover bg-[url('/schoolbycities.svg')]">
           <div className="py-8 md:p-12">
-            <h1 className="text-center text-2xl font-bold text-[#323232]">
+            <h1 className="text-center text-[20px] md:text-2xl font-bold text-[#323232]">
               School By Cities
             </h1>
 

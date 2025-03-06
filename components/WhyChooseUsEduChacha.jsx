@@ -43,7 +43,7 @@ const WhyChooseUsEduChacha = () => {
 
   return (
     <div className="pb-10 md:py-16 ">
-      <h1 className="text-[#323232] text-[36px] font-bold text-center ">
+      <h1 className="text-[#323232] text-[20px] md:text-[36px] font-bold text-center ">
         Why Choose Us?
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2  items-center pt-12">
