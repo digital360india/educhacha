@@ -42,7 +42,7 @@ const FormEduChacha = () => {
         {
           name: formData.name,
           phoneNumber: formData.phone,
-          url: "https://www.educhacha.com/",
+          url: window.location.href,
           source: "Educhacha - Confuse to choose the Best School",
           date: new Date().toISOString(),
         }

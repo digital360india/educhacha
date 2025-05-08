@@ -72,7 +72,7 @@ export default function ConsultationPopup({ setClose }) {
         {
           name: formData.name,
           phoneNumber: formData.phone,
-          url: "https://www.educhacha.com/",
+          url: window.location.href,
           source: "Educhacha - Get Consultation Popup",
           email: formData.email,
           currentClass  : formData.classes,
