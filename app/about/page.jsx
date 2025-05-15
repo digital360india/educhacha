@@ -4,7 +4,7 @@ export async function generateMetadata() {
   return {
     title: "About Us",
     description:
-      "Welcome to EduChacha - The ultimate guide to the best schools in the United Arab Emirates! ",
+      "Welcome to EduChacha - The ultimate guide to the best schools in India! ",
   };
 }
 

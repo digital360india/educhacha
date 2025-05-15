@@ -304,9 +304,9 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
           </div>
 
           <div className="md:flex md:flex-col md:justify-center md:items-end md:text-right mt-[60%] sm:mt-[0%] space-y-4">
-            <h2 className="text-[#023250] text-[24px] md:text-[40px] Merriweather">
+            <h1 className="text-[#023250] text-[24px] md:text-[40px] Merriweather">
               {school?.name}
-            </h2>
+            </h1>
             <div className="text-left flex justify-center ">
               <button
                 className="w-[180px]  shadow-md h-[40px] bg-[#02618f] text-white rounded-lg"
@@ -342,7 +342,7 @@ const SchoolDetails = ({ school, reviews, city, id }) => {
           <div className=" ">
             <div className="text-[#02618f] text-center flex flex-col justify-center items-center ">
               <div className="flex flex-col gap-6 font-bold p-2">
-                <p className="text-3xl text-center">{school?.name}</p>
+                <h1 className="text-3xl text-center">{school?.name}</h1>
                 <div className="text-left flex justify-center ">
                   <button
                     className="w-[180px]  shadow-md h-[40px] bg-[#02618f] text-white rounded-lg"

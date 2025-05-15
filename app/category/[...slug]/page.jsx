@@ -3,6 +3,7 @@ import FAQ from "@/components/FAQ";
 import CategoryPage from "@/components/CategoryPage";
 import CategoryHeroEduchacha from "@/components/CategoryHeroEduchacha";
 import Head from "next/head";
+import Script from "next/script";
 
 async function getCategoryData(slug) {
   const categoryData = await base("category 2")
@@ -29,11 +30,11 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: categoryData?.title,
       description: categoryData?.meta_description,
-      url: `https://www.educhacha.com/${params.slug}`,
+      url: `https://www.educhacha.com/category/${params.slug}`,
       locale: "en_US",
       type: "website",
       images: [{ url: categoryData?.featuredImg }],
-      siteName: "EduChacha",
+
       siteName: "EduChacha School Search Portal",
     },
     robots: {
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }) {
       card: "summary",
       title: categoryData?.title,
       description: categoryData?.meta_description,
-      card: categoryData?.featuredImg,
+      
       image: categoryData?.featuredImg,
       site: "@educhacha",
       creator: "@educhacha",
@@ -59,28 +60,35 @@ export default async function ListingPage({ params }) {
   return (
     <>
       <Head>
-        <script
-          defer
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: categoryData?.schema,
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: categoryData?.schema2,
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: categoryData?.schema3,
-          }}
-        />
+        {categoryData?.schema && (
+          <Script
+            id="schema1"
+            defer
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: categoryData.schema,
+            }}
+          />
+        )}
+        {categoryData?.schema2 && (
+          <Script
+            id="schema2"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: categoryData.schema2,
+            }}
+          />
+        )}
+        {categoryData?.schema3 && (
+          <Script
+            id="schema3"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: categoryData.schema3,
+            }}
+          />
+        )}
       </Head>
-
-
 
       <div className="overflow-hidden md:overflow-visible">
         <CategoryHeroEduchacha />
