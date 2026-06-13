@@ -3,49 +3,71 @@ import React from "react";
 
 const HeroEduChacha = () => {
   return (
-    <>
-      
-      <div>
-        <div className="mt-[60px] md:mt-[84px]">
+    <div className="h-auto">
+      <div className="relative w-full">
+        <div className="relative w-full">
+          {/* Desktop banner */}
           <Image
             src="/bannerbg2.png"
-            width={1000}
-            height={1000}
+            width={1440}
+            height={700}
             alt="banner"
-            className="w-full h-full object-cover hidden xl:block"
+            priority
+            className="w-full h-auto object-contain hidden xl:block"
           />
+
           <Image
             src="/mobileeduchacha.png"
-            width={1000}
-            height={1000}
+            width={800}
+            height={600}
             alt="banner"
-            className="w-full h-[65vh] md:object-cover  xl:hidden "
+            priority
+            className="w-full h-[45vw] min-h-[580px] object-cover object-top xl:hidden"
           />
         </div>
 
-        <div className="flex justify-end mr-12 ">
-          <div className="absolute bottom-[21%] hidden xl:block  border-[8px] md:border-[14px] border-[#093655] rotate-3 shadow-intense">
+        <div className="hidden xl:block">
+          <div
+            className="
+            absolute
+            bottom-[10%]
+            right-[5%]
+            border-[14px] border-[#093655]
+            rotate-3
+            shadow-[8px_8px_0px_rgba(9,54,85,0.4)]
+          "
+          >
             <Image
               src="/bannereduchacha.gif"
               width={400}
               height={460}
               alt="chacha"
-              className="w-[200px] h-[280px] lg:w-[380px] lg:h-[430px]  "
+              className="
+              w-[clamp(300px,22vw,460px)]
+              h-auto
+              block
+            "
             />
           </div>
 
-          <div className="absolute -bottom-0 md:bottom-[15%] right-12 md:right-96 hidden xl:block">
+          <div
+            className="
+            absolute
+            bottom-[4%]
+            right-[clamp(220px,calc(6%+clamp(200px,14vw,380px)+24px),600px)]
+          "
+          >
             <Image
               src="/books.svg"
-              width={1000}
-              height={1000}
+              width={170}
+              height={205}
               alt="books"
-              className="w-[120px] h-[150px] md:w-[170px] md:h-[205px] "
+              className="w-[clamp(100px,9vw,170px)] h-auto"
             />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

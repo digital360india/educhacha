@@ -88,15 +88,16 @@ const Testimonials = () => {
   return (
     <div className="bg-background-color p-1 ">
       <div className="px-8 pt-8  md:px-14 md:pt-14">
-
-      <h2 className="text-[#FFFFFF] text-[14px] md:text-[20px]">Get Inspired by stories</h2>
-      <h2 className="text-[#FFFFFF] text-[24px] md:text-[46px]">
-        Experience of Clients with Us...
-      </h2>
+        <h2 className="text-[#FFFFFF] text-[14px] md:text-[20px]">
+          Get Inspired by stories
+        </h2>
+        <h2 className="text-[#FFFFFF] text-[24px] md:text-[46px]">
+          Experience of Clients with Us...
+        </h2>
       </div>
       <div className="md:pt-8">
         <Carousel
-          responsive={responsive} 
+          responsive={responsive}
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={4000}
@@ -106,37 +107,41 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="h-[400px] md:h-[460px] flex justify-center items-center"
+              className="flex justify-center items-center px-4 py-8"
             >
               <div
-                className="bg-white w-[370px] h-[300px] md:h-[380px] mx-6 p-8 md:mx-14 rounded-lg relative "
+                className="bg-white w-full max-w-[370px] h-[320px] md:h-[380px] p-6 md:p-8 rounded-lg relative flex flex-col"
                 style={{
                   boxShadow: "0px 2px 10px 0px #00000040",
                 }}
               >
-                <div className="absolute -top-14 -left-8">
+                <div className="absolute -top-10 md:-top-14 -left-4 md:-left-8">
                   <Image
                     src="/doublecomma.svg"
                     width={1000}
                     height={1000}
                     alt="testimonial quote"
-                    className="w-[100px] h-[100px]"
+                    className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                   />
                 </div>
-                <p className="text-[12px] md:text-[1rem] text-[#323232] text-justify mt-[25px] md:mt-[35px]">
-                  {testimonial.description}
-                </p>
-                <div className="flex items-center justify-between pt-6">
-                  <p className="text-[#000000] text-[20px] font-semibold">
-                    {testimonial.name}
+                <div className="flex flex-col h-full">
+                  <p className="text-[13px] md:text-base text-[#323232] text-justify mt-6 md:mt-9">
+                    {testimonial.description}
                   </p>
-                  <Image
-                    src={testimonial.image}
-                    width={1000}
-                    height={1000}
-                    alt={testimonial.name}
-                    className="md:w-[70px] md:h-[70px] w-[60px] h-[60px] rounded-full object-cover object-top"
-                  />
+
+                  <div className="flex items-center justify-between h-full pt-6">
+                    <p className="text-base md:text-xl font-semibold text-[#000000]">
+                      {testimonial.name}
+                    </p>
+
+                    <Image
+                      src={testimonial.image}
+                      width={1000}
+                      height={1000}
+                      alt={testimonial.name}
+                      className="w-[50px] h-[50px] md:w-[70px] md:h-[70px] rounded-full object-cover object-top"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

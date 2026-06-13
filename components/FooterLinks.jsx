@@ -3,7 +3,8 @@ import React from "react";
 
 export const FooterLinks = () => {
   return (
-    <div className="w-[98.9vw] text-[14px] text-[#323232] bg-[#F3F3F3] pb-2 h-fit">
+    <div className="bg-[#F3F3F3]">
+    <div className="w-[98.9vw] text-[14px] text-[#323232] pb-2 h-fit max-w-[1440px] mx-auto">
       <div className=" px-8 sm:px-10 ">
         <div className="md:text-center text-[20px] md:text-[24px] underline text-[#323232] font-semibold pb-3">
           <p>Explore top Cities</p>
@@ -106,6 +107,7 @@ export const FooterLinks = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

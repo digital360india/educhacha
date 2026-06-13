@@ -6,7 +6,7 @@ const WhyChooseUsEduChacha = () => {
     {
       title: "Tailored Guidance You Can Trust",
       description:
-"At Edu Chacha, we focus on your child's unique needs, not school preferences. Our unbiased recommendations are designed to match the best educational environment for your child, ensuring a thoughtful and genuine selection process.",
+        "At Edu Chacha, we focus on your child's unique needs, not school preferences. Our unbiased recommendations are designed to match the best educational environment for your child, ensuring a thoughtful and genuine selection process.",
       icon: "/check.svg",
     },
     {
@@ -42,39 +42,41 @@ const WhyChooseUsEduChacha = () => {
   ];
 
   return (
-    <div className="pb-10 md:py-16 ">
-      <h1 className="text-[#323232] text-[20px] md:text-[36px] font-bold text-center ">
-        Why Choose Us?
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2  items-center pt-12">
-        <div>
-          <Image
-            src="/edu stick.gif"
-            alt="whychooseus"
-            width={1000}
-            height={1000}
-            className="w-[550px] h-[350px] mx-auto"
-          />
-        </div>
+    <div className="max-w-[1440px] mx-auto pt-10">
+      <div className="pb-10">
+        <h5 className="text-[#323232] text-[20px] md:text-[36px] font-bold text-center ">
+          Why Choose Us?
+        </h5>
+        <div className="flex flex-col md:flex-row items-center pt-10 md:pt-12">
+          <div className="md:w-[40%]">
+            <Image
+              src="/edu stick.gif"
+              alt="whychooseus"
+              width={1000}
+              height={1000}
+              className="w-[]md:w-[550px] h-[350px] md:h-[450px] mx-auto"
+            />
+          </div>
 
-        <div>
-          {contentArray.map((item, index) => (
-            <div key={index} className="flex gap-4 mb-6 px-8 md:px-10">
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={1000}
-                height={1000}
-                className="w-[20px] h-[23px]"
-              />
-              <div>
-                <h2 className="text-[#323232] text-lg font-semibold">
-                  {item.title}
-                </h2>
-                <p className="text-[#898989] text-sm">{item.description}</p>
+          <div className="md:w-[60%]">
+            {contentArray.map((item, index) => (
+              <div key={index} className="flex gap-4 mb-6 px-8 md:px-10">
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={1000}
+                  height={1000}
+                  className="w-[20px] h-[23px]"
+                />
+                <div>
+                  <h6 className="text-[#323232] text-lg font-semibold">
+                    {item.title}
+                  </h6>
+                  <p className="text-[#898989] text-sm text-justify">{item.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

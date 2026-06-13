@@ -98,7 +98,6 @@ export default function Home() {
       <FormEduChacha />
       <MapEduChacha />
       <WhyChooseUsEduChacha />
-    
       <AboutEduChacha />
       <Testimonials />
     </div>

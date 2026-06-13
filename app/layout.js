@@ -63,24 +63,26 @@ export default function RootLayout({ children }) {
         <ToastContainer />
         <Authprovider>
           <Navbar />
-          <Popup/>
+          {/* <Popup/> */}
           {children}
           <Footer />
           <FooterLinks />
         </Authprovider>
-        <div className="fixed bottom-4 left-4 z-50">
+        <div className="max-w-[1440px] mx-auto relative">
+        <div className="absolute bottom-4 left-4 z-50">
           <Link href="tel:+9557695360" aria-label="Phone">
             <button className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
               <FaPhoneAlt className="text-2xl " />
             </button>
           </Link>
         </div>
-        <div className="fixed bottom-4 right-4 z-50">
+        <div className="absolute bottom-4 right-4 z-50">
           <Link href="https://wa.me/9557695360" aria-label="WhatsApp">
             <button className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600">
               <FaWhatsapp className="md:text-[33px] text-3xl md:text-2xl" />
             </button>
           </Link>
+        </div>
         </div>
       </body>
     </html>

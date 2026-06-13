@@ -75,9 +75,9 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className="hidden md:block w-full absolute top-0 bg-transparent  backdrop-blur z-40">
-        <div className="justify-between  items-center h-[80px] flex px-10">
+    <div className="max-w-[1440px] mx-auto">
+      <nav className="hidden md:block max-w-[1440px] w-full bg-transparent backdrop-blur z-40 mx-auto h-[80px]">
+        <div className="justify-between items-center h-[80px] flex px-10">
           <div className="flex items-center justify-between py-7 ">
             <Link href={"/"}>
               <img
