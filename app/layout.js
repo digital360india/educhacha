@@ -58,12 +58,14 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <Head></Head> */}
+      <head>
+        <meta name="google-site-verification" content="fFEx2Cxi2wLt1V5EsJtMM-jk4wqIrVrhuHMLEs76sMs" />
+      </head>
       <body className="overflow-x-hidden">
         <ToastContainer />
         <Authprovider>
           <Navbar />
-          {/* <Popup/> */}
+          <Popup/>
           {children}
           <Footer />
           <FooterLinks />

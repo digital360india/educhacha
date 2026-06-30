@@ -58,12 +58,12 @@ export default function ConsultationPopup({ setClose }) {
           records.forEach(() => {
             console.log("Airtable submission successful!");
           });
-        }
+        },
       );
 
       const emailResponse = await axios.post(
         "https://goedunodemailer.onrender.com/send-email",
-        formData
+        formData,
       );
 
       // Submit to your LMS
@@ -75,9 +75,9 @@ export default function ConsultationPopup({ setClose }) {
           url: window.location.href,
           source: "Educhacha - Get Consultation Popup",
           email: formData.email,
-          currentClass  : formData.classes,
+          currentClass: formData.classes,
           date: new Date().toISOString(),
-        }
+        },
       );
 
       if (emailResponse.status === 200 && lmsResponse.status === 200) {
@@ -102,7 +102,7 @@ export default function ConsultationPopup({ setClose }) {
 
   return (
     <div className="fixed inset-0 z-[9999] bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="relative md:flex   gap-5  md:items-center bg-white rounded-lg shadow-lg w-full max-w-[90vw] md:max-w-[80vw] ">
+      <div className="relative md:flex gap-5  md:items-center bg-white rounded-lg shadow-lg w-full max-w-[800px] md:max-w-[1000px] h-[600px]">
         <button
           onClick={setClose}
           className="absolute bg-background-color p-1 md:px-2 z-50 rounded-full  md:py-2 top-3 right-2 text-xl md:text-2xl font-bold text-white "
@@ -112,40 +112,47 @@ export default function ConsultationPopup({ setClose }) {
           </div>
         </button>
 
-        <div className="w-[80vw] h-[539px] hidden md:block z-0 ">
+        <div className="hidden md:block w-[500px] h-full z-0 ">
           <Image
             src="/educhachaform.png"
             alt="School choice"
             width={1000}
             height={1000}
-            className="w-[660px] h-full  rounded-lg"
+            className="w-[660px] h-full rounded-lg object-fill"
           />
         </div>
 
-        <div className="w-full z-50 md:w-[470px] h-full rounded-lg md:rounded-l-2xl md:p-8  md:absolute md:top-0 md:right-14 bg-white">
-        <h3 className=" md:text-xl font-bold text-[#323232] pt-4 px-5 w-[85%]">
-        Fill this form and get in touch with our counsellor
+        <div className="w-full z-50 md:w-[400px] h-full rounded-lg md:rounded-l-2xl md:p-8  md:absolute md:top-0 md:right-14 bg-white">
+          <h3 className=" text-lg md:text-xl font-bold text-[#323232] pt-4 px-5 w-[90%] ">
+            Fill this form and get in touch with our counsellor
           </h3>
-          <form onSubmit={handleSubmit} className="space-y-7 md:space-y-6 p-5">
-            <input
-              required
-              type="text"
-              name="name"
-              placeholder="Your name"
-              value={formData.name}
-              onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
-            />
-            <input
-              required
-              type="email"
-              name="email"
-              placeholder="Your email"
-              value={formData.email}
-              onChange={handleChange}
-              className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
-            />
-            <div className="flex">
+          <form onSubmit={handleSubmit} className="space-y-6 md:space-y-6 p-5">
+            <div>
+              <label htmlFor="Name">Name:</label>
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
+                className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
+              />
+            </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                required
+                type="email"
+                name="email"
+                placeholder="Your email"
+                value={formData.email}
+                onChange={handleChange}
+                className="p-2 border-b-2 border-[#D9D9D9] w-full h-[39px] placeholder:text-[#898989] sm:border sm:rounded  sm:border-[#D9D9D9]"
+              />
+            </div>
+            <div className="">
+              <label htmlFor="Phone">Phone:</label>
               <PhoneInput
                 className="w-full border-[#D9D9D9] border-b-2 rounded md:border md:rounded"
                 country={"in"}
@@ -162,13 +169,14 @@ export default function ConsultationPopup({ setClose }) {
               />
             </div>
 
-            <div className="flex md:gap-20 gap-8">
+            <div className="">
+              <label htmlFor="class">Class:</label>
               <select
                 required
                 name="classes"
                 value={formData.classes}
                 onChange={handleChange}
-                className="p-2 border-b-2 border-[#D9D9D9] rounded  w-full h-[39px] placeholder:text-[#898989] md:border md:rounded "
+                className="p-2 border-b-2 border-[#D9D9D9] rounded w-full h-[39px] placeholder:text-[#898989] md:border md:rounded"
               >
                 <option value="" className="text-[#898989]">
                   Class
@@ -197,11 +205,11 @@ export default function ConsultationPopup({ setClose }) {
               value={formData.source}
               readOnly
             />
-            <div className="md:pt-20 pt-4 cursor-pointer">
+            <div className="pt-4  cursor-pointer">
               <button
                 type="submit"
                 disabled={loading}
-                className={`md:w-[177px] md:h-[60px] md:px-0 px-8 md:py-0 py-3  bg-background-color text-white p-2 rounded-lg ${
+                className={`md:w-[177px] md:h-[60px] md:px-0 px-8 md:py-0 py-3 bg-background-color text-white p-2 rounded-lg ${
                   loading
                     ? "cursor-not-allowed opacity-70"
                     : "hover:bg-[#1b6ea1c9]"
