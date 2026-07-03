@@ -9,7 +9,6 @@ import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import Popup from "@/components/Popup";
 
-
 export async function generateMetadata() {
   return {
     title: "Discover Top Boarding Schools in Seconds | Edu Chacha",
@@ -52,39 +51,53 @@ export async function generateMetadata() {
       ],
     },
   };
-  
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="fFEx2Cxi2wLt1V5EsJtMM-jk4wqIrVrhuHMLEs76sMs" />
+        <meta
+          name="google-site-verification"
+          content="fFEx2Cxi2wLt1V5EsJtMM-jk4wqIrVrhuHMLEs76sMs"
+        />
+
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PETWD2CPLP"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-PETWD2CPLP');
+        </script>
       </head>
+      
       <body className="overflow-x-hidden">
         <ToastContainer />
         <Authprovider>
           <Navbar />
-          <Popup/>
+          <Popup />
           {children}
           <Footer />
           <FooterLinks />
         </Authprovider>
         <div className="max-w-[1440px] mx-auto relative">
-        <div className="absolute bottom-4 left-4 z-50">
-          <Link href="tel:+9557695360" aria-label="Phone">
-            <button className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
-              <FaPhoneAlt className="text-2xl " />
-            </button>
-          </Link>
-        </div>
-        <div className="absolute bottom-4 right-4 z-50">
-          <Link href="https://wa.me/9557695360" aria-label="WhatsApp">
-            <button className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600">
-              <FaWhatsapp className="md:text-[33px] text-3xl md:text-2xl" />
-            </button>
-          </Link>
-        </div>
+          <div className="absolute bottom-4 left-4 z-50">
+            <Link href="tel:+9557695360" aria-label="Phone">
+              <button className="bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
+                <FaPhoneAlt className="text-2xl " />
+              </button>
+            </Link>
+          </div>
+          <div className="absolute bottom-4 right-4 z-50">
+            <Link href="https://wa.me/9557695360" aria-label="WhatsApp">
+              <button className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600">
+                <FaWhatsapp className="md:text-[33px] text-3xl md:text-2xl" />
+              </button>
+            </Link>
+          </div>
         </div>
       </body>
     </html>
