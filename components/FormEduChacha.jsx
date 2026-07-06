@@ -4,12 +4,13 @@ import Image from "next/image";
 import { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { toast } from "react-toastify";
+
 const FormEduChacha = () => {
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
-
     phone: "",
     source: "EduChacha - https://www.educhacha.com/",
   });
@@ -28,41 +29,85 @@ const FormEduChacha = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    console.log(formData);
-    try {
-      const response = await axios.post(
-        "https://goedunodemailer.onrender.com/send-email",
-        formData
-      );
 
-      // Submit to your LMS
-      const lmsResponse = await axios.post(
+    if (!formData.name || !formData.phone) {
+      toast.error("Please fill all required fields.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      await axios.post(
         "https://digitalleadmanagement.vercel.app/api/add-lead",
         {
           name: formData.name,
           phoneNumber: formData.phone,
           url: window.location.href,
-          source: "Educhacha - Confuse to choose the Best School",
-          date: new Date().toISOString(),
-        }
-      );
-      if (response.status === 200 && lmsResponse.status === 200) {
-        alert("Form submitted successfully.");
-        setFormData({
-          name: "",
-          phone: "",
           source: "EduChacha - https://www.educhacha.com/",
-        });
-      } else {
-        alert("Try again");
-      }
+          date: new Date().toISOString(),
+        },
+      );
+
+      toast.success("Form Submitted Successfully!");
+
+      setFormData({
+        name: "",
+        phone: "",
+        source: "EduChacha - https://www.educhacha.com/",
+      });
     } catch (error) {
-      alert("An error occurred. Please try again.");
+
+      if (axios.isAxiosError(error)) {
+        console.error(error.response?.status);
+        console.error(error.response?.data);
+      } else {
+        console.error(error);
+      }
+
+      toast.error("Failed to submit form. Please try again.");
     } finally {
       setLoading(false);
     }
   };
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   console.log(formData);
+  //   try {
+  //     const response = await axios.post(
+  //       "https://goedunodemailer.onrender.com/send-email",
+  //       formData
+  //     );
+
+  //     // Submit to your LMS
+  //     const lmsResponse = await axios.post(
+  //       "https://digitalleadmanagement.vercel.app/api/add-lead",
+  //       {
+  //         name: formData.name,
+  //         phoneNumber: formData.phone,
+  //         url: window.location.href,
+  //         source: "Educhacha - Confuse to choose the Best School",
+  //         date: new Date().toISOString(),
+  //       }
+  //     );
+  //     if (response.status === 200 && lmsResponse.status === 200) {
+  //       alert("Form submitted successfully.");
+  //       setFormData({
+  //         name: "",
+  //         phone: "",
+  //         source: "EduChacha - https://www.educhacha.com/",
+  //       });
+  //     } else {
+  //       alert("Try again");
+  //     }
+  //   } catch (error) {
+  //     alert("An error occurred. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
 
   return (
 
