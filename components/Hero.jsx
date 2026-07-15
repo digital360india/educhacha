@@ -139,7 +139,6 @@ export default function Hero({ image, height, need }) {
                       {[
                         "Boarding",
                         "Boys Boarding",
-                        "Full Boarding",
                         "Girls Boarding",
                         "Day Boarding",
                         "Coed Boarding",
